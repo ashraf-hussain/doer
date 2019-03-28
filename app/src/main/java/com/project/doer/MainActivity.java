@@ -3,6 +3,7 @@ package com.project.doer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private static final String TAG = MainActivity.class.getName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,4 +101,40 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
+    public void onStart()
+    {
+        super.onStart();
+        Log.d(TAG, "In the onStart() event");
+    }
+    public void onRestart()
+    {
+        super.onRestart();
+        Log.d(TAG, "In the onRestart() event");
+    }
+    public void onResume()
+    {
+        super.onResume();
+        Log.d(TAG, "In the onResume() event");
+    }
+    public void onPause()
+    {
+        super.onPause();
+        Log.d(TAG, "In the onPause() event");
+    }
+    public void onStop()
+    {
+        super.onStop();
+        Log.d(TAG, "In the onStop() event");
+    }
+    public void onDestroy()
+    {
+        super.onDestroy();
+        Log.d(TAG, "In the onDestroy() event");
+    }
+    
+    
+    
 }
