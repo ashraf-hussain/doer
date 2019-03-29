@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_group_list"
+    app:contentPadding="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp">
+
+ <TextView
+     android:id="@+id/tv_group_name"
+     android:textSize="16sp"
+     android:drawableStart="@drawable/ic_android_black_24dp"
+     android:drawablePadding="16dp"
+     android:typeface="serif"
+     tools:text="Android - 25 Feb, 2019"
+     android:textColor="@color/colorPrimaryText"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />
+
+</android.support.v7.widget.CardView>
