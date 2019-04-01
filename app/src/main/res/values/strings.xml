@@ -25,4 +25,5 @@
     <string name="select_platform">Select Platform</string>
     <string name="awesome_group_name">Awesome Group Name</string>
     <string name="create">Create</string>
+    <string name="your_batch">Your Batch</string>
 </resources>
