@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/sv_user_signup"
     android:orientation="vertical"
     android:padding="54dp">
 
@@ -31,6 +32,7 @@
                 android:drawableStart="@drawable/ic_person_outline_black_24dp"
                 android:drawablePadding="8dp"
                 android:hint="@string/first_name"
+                android:inputType="text"
                 android:maxLines="1"
                 android:paddingTop="16dp"
                 android:paddingEnd="16dp"
@@ -54,6 +56,7 @@
                 android:drawableStart="@drawable/ic_person_outline_black_24dp"
                 android:drawablePadding="8dp"
                 android:hint="@string/last_name"
+                android:inputType="text"
                 android:maxLines="1"
                 android:paddingTop="16dp"
                 android:paddingEnd="16dp"
@@ -80,13 +83,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_date_range_black_24dp"
                     android:drawablePadding="8dp"
                     android:hint="@string/birthday"
+                    android:inputType="text"
                     android:maxLines="1"
                     android:paddingTop="16dp"
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
-                    android:drawableStart="@drawable/ic_date_range_black_24dp"
                     android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:typeface="serif" />
@@ -96,13 +100,15 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_date_range_black_24dp"
+                    android:drawablePadding="8dp"
                     android:hint="@string/date_joined"
+                    android:inputType="text"
                     android:maxLines="1"
                     android:paddingTop="16dp"
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
-                    android:drawablePadding="8dp"
-                    android:drawableStart="@drawable/ic_date_range_black_24dp"                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:typeface="serif" />
 
@@ -144,6 +150,26 @@
 
         <!--</RadioGroup>-->
 
+
+
+            <TextView
+                android:id="@+id/tv_user_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_group_black_24dp"
+                android:drawablePadding="8dp"
+                android:hint="@string/your_batch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -180,6 +206,7 @@
                 android:layout_marginTop="8dp"
                 android:hint="@string/password"
                 android:maxLines="1"
+                android:inputType="textPassword"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp"
@@ -198,6 +225,7 @@
                 android:layout_marginTop="8dp"
                 android:hint="@string/confirm_password"
                 android:maxLines="1"
+                android:inputType="textPassword"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp"
