@@ -49,7 +49,7 @@ public class UserSignupImp implements UserSignUpPresenter {
                 if (response.code() == 400) {
                     try {
                         Log.v("Error code 400",response.errorBody().string());
-                        view.onFailure(response.code();
+                        view.onFailure(String.valueOf(response.code()));
                         view.onFailure(response.errorBody().string());
 
                     } catch (IOException e) {

@@ -88,7 +88,7 @@
         <counts>
           <entry key="dummy" value="13" />
           <entry key="gradle" value="45" />
-          <entry key="java" value="3299" />
+          <entry key="java" value="3357" />
           <entry key="txt" value="44" />
           <entry key="xml" value="1880" />
         </counts>
@@ -96,7 +96,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="45" />
-          <entry key="JAVA" value="3299" />
+          <entry key="JAVA" value="3357" />
           <entry key="PLAIN_TEXT" value="57" />
           <entry key="XML" value="1880" />
         </counts>
@@ -105,11 +105,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="214" column="48" selection-start-line="214" selection-start-column="48" selection-end-line="214" selection-end-column="48" />
+            <state relative-caret-position="-707">
+              <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+              <folding>
+                <element signature="e#2430#2431#0" expanded="true" />
+                <element signature="e#2490#2491#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="496">
+              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -189,11 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -284,10 +288,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/GroupList.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/signup/SignUpModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java" />
       </list>
     </option>
   </component>
@@ -497,7 +501,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1442" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" weight="0.25579977" />
@@ -510,7 +513,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32959184" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.32857144" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32837528" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.327551" />
       <window_info anchor="bottom" id="Android Profiler" order="6" />
@@ -976,26 +979,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="214" column="48" selection-start-line="214" selection-start-column="48" selection-end-line="214" selection-end-column="48" />
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="496">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="-707">
+          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
           </folding>
         </state>
       </provider>
