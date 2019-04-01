@@ -9,10 +9,17 @@ public class LoginModel {
     @SerializedName("password")
     private String password;
 
+    @SerializedName("token")
+    private String token;
+
     public LoginModel(String email, String password) {
         this.email = email;
         this.password = password;
     }
+
+    public String getToken() { return token; }
+
+    public void setToken(String token) { this.token = token; }
 
     public String getEmail() {
         return email;

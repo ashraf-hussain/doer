@@ -1,80 +1,55 @@
 package com.project.doer.login;
 
+import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.ScrollView;
 
-import com.project.doer.AdminDashboardActivity;
-import com.project.doer.GroupList;
 import com.project.doer.R;
 import com.project.doer.common.BaseActivity;
-import com.project.doer.common.SetupRetrofit;
-import com.project.doer.group.GroupModel;
-import com.project.doer.model.DoerApiInterface;
-import com.project.doer.model.DoerResponse;
+import com.project.doer.data.AppConstants;
+import com.project.doer.data.AppUtils;
+import com.project.doer.user.UserDashboardActivity;
 import com.project.doer.userSignUp.SignUpActivity;
-import com.project.doer.userSignUp.UserSignupImp;
-
-import java.util.List;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
 
-public class LoginActivity extends BaseActivity {
+
+public class LoginActivity extends BaseActivity implements BaseView {
     @BindView(R.id.et_login_email)
     EditText etLoginEmail;
     @BindView(R.id.et_login_password)
     EditText etLoginPassword;
+    String email, password;
+    LoginPresenter loginPresenter;
+    SharedPreferences sharedPreferences;
+    @BindView(R.id.sv_login)
+    ScrollView svLogin;
 
     @Override
     protected int getLayout() {
         return R.layout.activity_login;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @Override
     protected void init() {
-    notificationBarSetup();
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+        AppUtils.showSnackbar(this, svLogin, "Working");
 
-    check();
+        loginPresenter = new LoginImp(this);
     }
-
-    private void check() {
-//        Log.d("ss", "check: ");
-//        SetupRetrofit setupRetrofit = new SetupRetrofit();
-//        Retrofit retrofit = setupRetrofit.getRetrofit();
-//        DoerApiInterface doerApiInterface = retrofit.create(DoerApiInterface.class);
-//        doerApiInterface.getGroups().enqueue(new Callback<GroupList>() {
-//            @Override
-//            public void onResponse(Call<GroupList> call, Response<GroupList> response) {
-//                Log.d("kkk", "onResponseGroup: " + response.code());
-//                Log.d("kkk", "onResponseGroup: " + response.raw().request().url());
-//            }
-//
-//            @Override
-//            public void onFailure(Call<GroupList> call, Throwable t) {
-//
-//            }
-//        });
-    }
-
 
     @OnClick({R.id.btn_signIn, R.id.tv_crete_ac})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_signIn:
-                Intent i = new Intent(this, AdminDashboardActivity.class);
-                startActivity(i);
+                processLogin();
                 break;
             case R.id.tv_crete_ac:
                 Intent intent = new Intent(this, SignUpActivity.class);
@@ -83,21 +58,47 @@ public class LoginActivity extends BaseActivity {
         }
     }
 
-    //NotificationBar setup
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void notificationBarSetup() {
-        Window window = this.getWindow();
-
-        // clear FLAG_TRANSLUCENT_STATUS flag:
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
-        // finally change the color
-        window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
+    @Override
+    public void onSuccess(String msg) {
+        AppUtils.showSnackbar(this, svLogin, msg);
+        save(msg);
+        Intent i = new Intent(this, UserDashboardActivity.class);
+        startActivity(i);
     }
 
+    @Override
+    public void onFailure(String msg) {
+        AppUtils.showSnackbar(this, svLogin, msg);
 
+    }
+
+    private void processLogin() {
+        email = etLoginEmail.getText().toString();
+        password = etLoginPassword.getText().toString();
+        if (email.isEmpty()) {
+            etLoginEmail.setError("Required!");
+
+        } else if (password.isEmpty()) {
+            etLoginPassword.setError("Required!");
+
+        }
+
+        if (!email.equalsIgnoreCase("")
+                && !password.equalsIgnoreCase("")) {
+            LoginModel loginModel = new LoginModel(email, password);
+            loginPresenter.sendLoginData(loginModel);
+        }
+    }
+
+    void save(String value) {
+        sharedPreferences = getSharedPreferences(AppConstants.TOKEN_DATA,
+                Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(AppConstants.TOKEN, value);
+        editor.commit();
+
+
+
+    }
 
 }

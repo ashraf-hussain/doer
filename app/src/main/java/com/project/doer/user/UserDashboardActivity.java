@@ -5,6 +5,7 @@ import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -33,7 +34,8 @@ public class UserDashboardActivity extends BaseActivity {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void init() {
-        notificationBarSetup();
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         UserTabAdapter adapter = new UserTabAdapter(getSupportFragmentManager());
         adapter.addFragment(new UserTaskFragment(), "Task");
@@ -52,25 +54,10 @@ public class UserDashboardActivity extends BaseActivity {
         tabLayout.getTabAt(2).setIcon(tabIcons[2]);
     }
 
-
     private int[] tabIcons = {
             R.drawable.ic_format_list_bulleted_black_24dp,
             R.drawable.ic_rate_review_black_24dp,
             R.drawable.ic_notifications_none_black_24dp
     };
 
-    //NotificationBar setup
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void notificationBarSetup() {
-        Window window = this.getWindow();
-
-        // clear FLAG_TRANSLUCENT_STATUS flag:
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
-        // finally change the color
-        window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
-    }
 }

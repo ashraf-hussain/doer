@@ -1,20 +1,25 @@
 package com.project.doer.userTask;
 
 
+import android.content.SharedPreferences;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.project.doer.R;
 import com.project.doer.common.BaseFragment;
 import com.project.doer.common.ConnectionDetector;
+import com.project.doer.data.AppConstants;
 import com.project.doer.data.AppUtils;
 
 import butterknife.BindView;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class UserTaskFragment extends BaseFragment {
 
@@ -22,6 +27,7 @@ public class UserTaskFragment extends BaseFragment {
 //    @BindView(R.id.rv_user_task_fragment)
 //    RecyclerView rvRockFragment;
     ConnectionDetector connectionDetector;
+    SharedPreferences sharedPreferences;
 //    @BindView(R.id.ll_offline_mode)
 //    LinearLayout tvOfflineMode;
 //    // UserTaskPresenter userTaskPresenter;
@@ -45,6 +51,11 @@ public class UserTaskFragment extends BaseFragment {
     @Override
     protected void init() {
         connectionDetector = new ConnectionDetector(getContext());
+
+        sharedPreferences = this.getActivity().getSharedPreferences(AppConstants.TOKEN_DATA, MODE_PRIVATE);
+
+        String tokenCheck = sharedPreferences.getString(AppConstants.TOKEN, "");
+        Log.d(TAG, "init: "+tokenCheck);
 
         //rvRockFragment.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
