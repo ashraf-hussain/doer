@@ -26,31 +26,10 @@ public class AppUtils {
         Snackbar snackbar = Snackbar
                 .make(view, text, Snackbar.LENGTH_SHORT);
         View sbView = snackbar.getView();
-        sbView.setBackgroundColor(ContextCompat.getColor(context,R.color.colorPrimaryDark));
+        sbView.setBackgroundColor(ContextCompat.getColor(context,R.color.colorPrimaryText));
         snackbar.show();
     }
 
-
-    /**
-     * Get formatted date.
-     *
-     * @param inputMillis  milliseconds
-     * @param outPutFormat formats.
-     * @see AppConstants.DateOutputFormat
-     */
-    public static String getFormattedDate(long inputMillis, String outPutFormat) {
-        return new SimpleDateFormat(outPutFormat, Locale.ENGLISH).format(inputMillis);
-    }
-
-    /**
-     * Get today's formatted date.
-     *
-     * @param outPutFormat formats.
-     * @see AppConstants.DateOutputFormat
-     */
-    public static String getTodaysDate(String outPutFormat) {
-        return new SimpleDateFormat(outPutFormat, Locale.ENGLISH).format(System.currentTimeMillis());
-    }
 
 
 }

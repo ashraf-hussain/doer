@@ -2,13 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="54dp">
+    android:id="@+id/sv_login"
+    android:orientation="vertical">
 
 
     <LinearLayout
+        android:layout_margin="54dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -57,6 +58,7 @@
                 android:layout_marginTop="8dp"
                 android:drawablePadding="8dp"
                 android:hint="@string/password"
+                android:inputType="textPassword"
                 android:maxLines="1"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
