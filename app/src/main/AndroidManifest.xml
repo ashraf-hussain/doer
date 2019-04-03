@@ -24,13 +24,24 @@
             </intent-filter>
         </activity>
         <activity android:name=".userSignUp.SignUpActivity" />
-        <activity
-            android:name=".AdminDashboardActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdminDashboardActivity" />
         <activity
             android:name=".CreateGroupActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".user.UserDashboardActivity" />
+        <activity android:name=".userTask.UserTaskDetailActivity" />
+        <activity android:name=".login.AdminSignUpActivity" />
+        <activity android:name=".superAdmin.SuperAdminActivity" />
+        <activity android:name=".group.GetAllGroupsActivity" />
+        <activity android:name=".adminTask.AssignTaskActivity" />
+        <activity android:name=".adminTask.AdminTaskListActivity" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

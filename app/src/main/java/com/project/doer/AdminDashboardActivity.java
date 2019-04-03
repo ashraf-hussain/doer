@@ -7,6 +7,7 @@ import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -33,9 +34,9 @@ public class AdminDashboardActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        this.getActionBar().hide();
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
-        notificationBarSetup();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_create_group);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,53 +115,5 @@ public class AdminDashboardActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-
-    public void onStart() {
-        super.onStart();
-        Log.d(TAG, "In the onStart() event");
-    }
-
-    public void onRestart() {
-        super.onRestart();
-        Log.d(TAG, "In the onRestart() event");
-    }
-
-    public void onResume() {
-        super.onResume();
-        Log.d(TAG, "In the onResume() event");
-    }
-
-    public void onPause() {
-        super.onPause();
-        Log.d(TAG, "In the onPause() event");
-    }
-
-    public void onStop() {
-        super.onStop();
-        Log.d(TAG, "In the onStop() event");
-    }
-
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d(TAG, "In the onDestroy() event");
-    }
-
-
-    //NotificationBar setup
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void notificationBarSetup() {
-        Window window = this.getWindow();
-
-        // clear FLAG_TRANSLUCENT_STATUS flag:
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
-        // finally change the color
-        window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
-    }
-
 
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/sv_admin_signUp"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="54dp">
@@ -30,6 +31,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/first_name"
                 android:maxLines="1"
+                android:inputType="text"
+                android:typeface="serif"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp" />
@@ -48,6 +51,8 @@
                 android:layout_marginTop="8dp"
                 android:hint="@string/last_name"
                 android:maxLines="1"
+                android:inputType="text"
+                android:typeface="serif"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp" />
@@ -58,36 +63,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:orientation="horizontal">
-
 
                 <EditText
                     android:id="@+id/et_admin_dob"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="@string/birthday"
                     android:maxLines="1"
+                    android:layout_marginTop="8dp"
+                    android:inputType="date"
+                    android:typeface="serif"
                     android:paddingBottom="16dp"
                     android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/et_admin_date_joined"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="@string/date_joined"
-                    android:maxLines="1"
-                    android:paddingBottom="16dp"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -137,6 +127,7 @@
                 android:layout_marginTop="8dp"
                 android:hint="@string/email"
                 android:maxLines="1"
+                android:typeface="serif"
                 android:inputType="textWebEmailAddress"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
@@ -156,6 +147,8 @@
                 android:layout_marginTop="8dp"
                 android:hint="@string/password"
                 android:maxLines="1"
+                android:inputType="textPassword"
+                android:typeface="serif"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp" />
@@ -173,27 +166,20 @@
                 android:layout_marginTop="8dp"
                 android:hint="@string/confirm_password"
                 android:maxLines="1"
+                android:inputType="textPassword"
+                android:typeface="serif"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp" />
 
         </android.support.design.widget.TextInputLayout>
-
-
-        <CheckBox
-            android:id="@+id/checkbox_admin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            android:text="@string/admin" />
+        
 
         <Button
             android:id="@+id/btn_admin_signUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/button_background"
             android:text="@string/sign_up"
             android:textAllCaps="false"

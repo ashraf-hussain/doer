@@ -28,6 +28,17 @@ public class SignUpModel {
     @SerializedName("group_id")
     private String groupId;
 
+    @SerializedName("registration_token")
+    private String registrationToken;
+
+    public String getRegistrationToken() {
+        return registrationToken;
+    }
+
+    public void setRegistrationToken(String registrationToken) {
+        this.registrationToken = registrationToken;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -56,11 +67,17 @@ public class SignUpModel {
         return dob;
     }
 
-    public void setDob(String dob) { this.dob = dob; }
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
 
-    public String getPassword() { return password; }
+    public String getPassword() {
+        return password;
+    }
 
-    public void setPassword(String password) { this.password = password; }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getGender() {
         return gender;
@@ -86,9 +103,8 @@ public class SignUpModel {
         this.groupId = groupId;
     }
 
-
     public SignUpModel(String firstName, String lastName, String email, String password, String dob,
-                       String gender, String groupId) {
+                       String gender, String groupId, String registrationToken) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -96,6 +112,17 @@ public class SignUpModel {
         this.dob = dob;
         this.gender = gender;
         this.groupId = groupId;
+        this.registrationToken = registrationToken;
+    }
+
+    public SignUpModel(String firstName, String lastName, String email, String password, String dob,
+                       String gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.dob = dob;
+        this.gender = gender;
     }
 
 }

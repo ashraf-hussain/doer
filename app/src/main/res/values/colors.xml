@@ -4,5 +4,11 @@
     <color name="primaryLightColor">#ffffff</color>
     <color name="colorPrimaryDark">#c7c7c7</color>
     <color name="colorAccent">#000000</color>
+    <color name="colorSecondaryText">#4b636e</color>
     <color name="colorPrimaryText">#000000</color>
+    <color name="colorView">#bdbdbd</color>
+    <color name="colorLightWhite">#fafafa</color>
+    <color name="colorGreen">#009688</color>
+    <color name="colorRed">#A70202</color>
+    <color name="colorYellow">#673AB7</color>
 </resources>

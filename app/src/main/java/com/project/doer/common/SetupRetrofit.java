@@ -51,7 +51,7 @@ public class SetupRetrofit {
                 Request original = chain.request();
                 Request request = original.newBuilder()
                         .header("Authorization", AppConstants.TOKEN_TYPE + " " + auth)
-                        .header("api_key", AppConstants.API_TOKEN)
+                        .header("apiKey", AppConstants.API_TOKEN)
                         .method(original.method(), original.body())
                         .build();
                 Response response = chain.proceed(request);
