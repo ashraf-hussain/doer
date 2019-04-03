@@ -2,7 +2,9 @@ package com.project.doer.group;
 
 import com.google.gson.annotations.SerializedName;
 
-public class GroupModel {
+import java.io.Serializable;
+
+public class GroupModel implements Serializable {
     @SerializedName("id")
 
     private Integer id;
@@ -24,6 +26,12 @@ public class GroupModel {
     @SerializedName("status")
 
     private Boolean status;
+
+    public GroupModel(String groupName, String platform, String startDate) {
+        this.groupName = groupName;
+        this.platform = platform;
+        this.startDate = startDate;
+    }
 
     public Integer getId() {
         return id;

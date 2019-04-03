@@ -2,6 +2,7 @@ package com.project.doer.userSignUp;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 import com.project.doer.R;
 import com.project.doer.common.BaseActivity;
+import com.project.doer.data.AppConstants;
 import com.project.doer.data.AppUtils;
 import com.project.doer.group.GroupModel;
 import com.project.doer.login.LoginActivity;
@@ -53,7 +55,7 @@ public class SignUpActivity extends BaseActivity implements UserSignUpView {
     DatePickerDialog.OnDateSetListener date;
     DatePickerDialog.OnDateSetListener joinedDate;
     String userDob, userJoinedDate, userEmail, userFirstName,
-            userLastName, userPassword, userConfrimPassword, userGroup, userGroupId;
+            userLastName, userPassword, userConfrimPassword, userGroup, userGroupId, fcmToken;
     UserSignUpPresenter userSignUpPresenter;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
@@ -70,7 +72,11 @@ public class SignUpActivity extends BaseActivity implements UserSignUpView {
         calendar = Calendar.getInstance();
         datePickerAction();
         datePickAction();
-        userSignUpPresenter = new UserSignupImp(this);
+        userSignUpPresenter = new UserSignupImp(this, this);
+        SharedPreferences sharedPreferences = this.getSharedPreferences(AppConstants.TOKEN_DATA,
+                MODE_PRIVATE);
+         fcmToken = sharedPreferences.getString(AppConstants.FCM_TOKEN, "");
+        Log.d(TAG, "Fcm: "+fcmToken);
     }
 
     @Override
@@ -83,6 +89,16 @@ public class SignUpActivity extends BaseActivity implements UserSignUpView {
     }
 
     @Override
+    public void onGroupFoundSuccess(String msg) {
+        AppUtils.showSnackbar(this, svUserSignup, msg);
+    }
+
+    @Override
+    public void onGroupFailure(String msg) {
+        AppUtils.showSnackbar(this, svUserSignup, msg);
+    }
+
+    @Override
     public void onFailure(String msg) {
         AppUtils.showSnackbar(this, svUserSignup, msg);
     }
@@ -90,9 +106,9 @@ public class SignUpActivity extends BaseActivity implements UserSignUpView {
     @Override
     public void userGroupListResponse(List<GroupModel> groupModelList) {
         Log.d(TAG, "size " + groupModelList.size());
-        userGroupId = String.valueOf((groupModelList.get(1).getId()));
-        userGroup = (groupModelList.get(1).getGroupName());
-        tvUserGroup.setText(groupModelList.get(1).getGroupName());
+        userGroupId = String.valueOf((groupModelList.get(0).getId()));
+        userGroup = (groupModelList.get(0).getGroupName());
+        tvUserGroup.setText(groupModelList.get(0).getGroupName());
         Log.d(TAG, "userGroupListResponse: " + groupModelList.get(0).getGroupName());
     }
 
@@ -223,7 +239,7 @@ public class SignUpActivity extends BaseActivity implements UserSignUpView {
 
 
             SignUpModel signUpModel = new SignUpModel(userFirstName, userLastName, userEmail,
-                    userPassword, userDob, "false", userGroupId);
+                    userPassword, userDob, "false", userGroupId, fcmToken);
             userSignUpPresenter.sendSignUpData(signUpModel);
             Log.d(TAG, userFirstName + " " + userLastName + " "
                     + userDob + " " + userPassword + " " + userEmail + " "

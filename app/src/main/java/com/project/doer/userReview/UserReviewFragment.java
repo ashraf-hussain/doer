@@ -1,9 +1,11 @@
 package com.project.doer.userReview;
 
-import android.support.v4.app.Fragment;
+import android.content.SharedPreferences;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.project.doer.R;
 import com.project.doer.common.BaseFragment;
@@ -11,85 +13,78 @@ import com.project.doer.common.ConnectionDetector;
 import com.project.doer.data.AppUtils;
 import com.project.doer.userTask.UserTaskFragment;
 
-public class UserReviewFragment extends BaseFragment {
+import butterknife.BindView;
+import butterknife.OnClick;
 
-    // TaskAdapter taskAdapter;
-//    @BindView(R.id.rv_user_task_fragment)
-//    RecyclerView rvRockFragment;
+public class UserReviewFragment extends BaseFragment implements UserReviewView {
+
+    //ReviewAdapter reviewAdapter;
+    @BindView(R.id.rv_user_task)
+    RecyclerView rvUserTask;
     ConnectionDetector connectionDetector;
-    //    @BindView(R.id.ll_offline_mode)
-//    LinearLayout tvOfflineMode;
-//    // UserTaskPresenter userTaskPresenter;
-//    @BindView(R.id.swipe_refresh)
-   //SwipeRefreshLayout pullToRefresh;
-    private static final String TAG = UserReviewFragment.class.getSimpleName();
+    SharedPreferences sharedPreferences;
+    @BindView(R.id.ll_no_internet)
+    LinearLayout llNoInternet;
+    UserReviewPresenter userReviewPresenter;
+    //@BindView(R.id.user_review_swipe_refresh)
+    //SwipeRefreshLayout pullToRefresh;
+    private static final String TAG = UserTaskFragment.class.getSimpleName();
 
-//
-//    @Override
-//    public void showRecyclerView(List<MusicModel> musicModelList) {
-//
-//        musicAdapter = new MusicAdapter(musicModelList);
-//        rvRockFragment.setAdapter(musicAdapter);
-//    }
+
+    @Override
+    public void showUserReview(ReviewModel reviewModel) {
+
+        //reviewAdapter = new ReviewAdapter(taskModelList);
+        // rvUserTask.setAdapter(reviewAdapter);
+    }
 
     @Override
     protected int getLayout() {
-        return R.layout.fragment_user_task_review;
+        return R.layout.fragment_user_task;
     }
 
     @Override
     protected void init() {
         connectionDetector = new ConnectionDetector(getContext());
 
-        //rvRockFragment.setHasFixedSize(true);
+        rvUserTask.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        //rvRockFragment.setLayoutManager(layoutManager);
-
-        // userTaskPresenter = new UserTaskImp(this);
-        // userTaskPresenter.loadUserTask();
+        rvUserTask.setLayoutManager(layoutManager);
+        userReviewPresenter = new UserReviewImp(this,this.getActivity());
+       // userReviewPresenter.loadUserReview();
 
     }
 
-    //swipe to refresh
-//    private void swipeToRefresh() {
-//        if (!connectionDetector.isConnected()) {
-//            // tvOfflineMode.setVisibility(View.VISIBLE);
-//
-//            pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//                @Override
-//                public void onRefresh() {
-//                    AppUtils.showSnackbar(pullToRefresh, "No Internet Connection !");
-//                    pullToRefresh.setRefreshing(false);
-//                }
-//            });
-//
-//        } else {
-//            pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//                @Override
-//                public void onRefresh() {
-//                    //  userTaskPresenter.loadUserTask();
-//                    //   tvOfflineMode.setVisibility(View.GONE);
-//                    pullToRefresh.setRefreshing(false);
-//                    AppUtils.showSnackbar(pullToRefresh, "Data Refreshed");
-//                }
-//            });
-//
-//        }
-//
-//    }
-//
-//    private void checkpoint() {
-//
-//        if (!connectionDetector.isConnected()) {
-//            AppUtils.showSnackbar(pullToRefresh, "No Internet Connection !");
-//        }
-//    }
-//
-//    @Override
-//    public void onResume() {
-//        super.onResume();
-//        checkpoint();
-//        swipeToRefresh();
-//    }
-//
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        checkpoint();
+    }
+
+
+    @Override
+    public void checkpoint() {
+        if (connectionDetector.isConnected()) {
+            llNoInternet.setVisibility(View.GONE);
+
+            //userReviewPresenter.loadUserReview();
+
+        } else {
+            llNoInternet.setVisibility(View.VISIBLE);
+//            AppUtils.showSnackbar(this.getActivity(), pullToRefresh,
+//                    getString(R.string.no_internet_connection));
+        }
+    }
+
+
+    @OnClick({R.id.btn_retry})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.btn_retry:
+                checkpoint();
+                break;
+        }
+    }
+
 }

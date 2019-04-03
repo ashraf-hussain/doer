@@ -3,6 +3,7 @@ package com.project.doer.login;
 import android.util.Log;
 
 import com.project.doer.common.SetupRetrofit;
+import com.project.doer.group.GroupModel;
 import com.project.doer.model.DoerApiInterface;
 
 import retrofit2.Call;
@@ -24,7 +25,7 @@ public class LoginImp implements LoginPresenter {
         Retrofit retrofit = setupRetrofit.getRetrofit();
         DoerApiInterface doerApiInterface = retrofit.create(DoerApiInterface.class);
         doerApiInterface.actionLogin(loginModel).enqueue(new Callback<LoginModel>() {
-            public final String TAG = LoginImp.class.getName();
+            final String TAG = LoginImp.class.getName();
 
             @Override
             public void onResponse(Call<LoginModel> call, Response<LoginModel> response) {
@@ -34,8 +35,14 @@ public class LoginImp implements LoginPresenter {
                 if (response.isSuccessful()) {
                     LoginModel loginModelResponse = response.body();
                     String token = loginModelResponse.getToken();
-                    Log.d(TAG, "onResponse: " + token);
-                    baseView.onSuccess(token);
+                    RoleModel roleModel = loginModelResponse.getRoleModel();
+                    String role = roleModel.getRole();
+
+                    GroupModel groupModel = loginModelResponse.getGroupModel();
+                    int groupId = groupModel.getId();
+
+                    Log.d(TAG, "onResponse: " + token+" "+role);
+                    baseView.onSuccess(token,role,groupId);
                 }
 
             }

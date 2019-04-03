@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "445905522131",
+    "firebase_url": "https://doer-e4d93.firebaseio.com",
+    "project_id": "doer-e4d93",
+    "storage_bucket": "doer-e4d93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445905522131:android:0295bb3bbe58de56",
+        "android_client_info": {
+          "package_name": "com.project.doer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqDfKTsYqIaQaHWJSk7tpqiJsLohEfvEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445905522131-8ccabpskrlfqk9hn52nfrj271kqoi7gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

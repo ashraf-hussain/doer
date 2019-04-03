@@ -2,9 +2,14 @@ package com.project.doer.adminTask;
 
 import com.google.gson.annotations.SerializedName;
 
-public class TaskModel {
-    @SerializedName("title")
+import java.io.Serializable;
 
+public class TaskModel implements Serializable {
+
+
+    @SerializedName("id")
+    private String id;
+    @SerializedName("title")
     private String title;
     @SerializedName("description")
 
@@ -22,6 +27,10 @@ public class TaskModel {
         this.deadline = deadline;
         this.groupId = groupId;
     }
+
+    public String getId() { return id; }
+
+    public void setId(String id) { this.id = id; }
 
     public String getTitle() {
         return title;

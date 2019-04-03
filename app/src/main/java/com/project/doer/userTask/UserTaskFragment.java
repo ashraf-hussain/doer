@@ -12,36 +12,41 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.project.doer.R;
+import com.project.doer.adminTask.TaskModel;
 import com.project.doer.common.BaseFragment;
 import com.project.doer.common.ConnectionDetector;
 import com.project.doer.data.AppConstants;
 import com.project.doer.data.AppUtils;
+import com.project.doer.login.LoginActivity;
+
+import java.util.List;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class UserTaskFragment extends BaseFragment {
+public class UserTaskFragment extends BaseFragment implements UserTaskView {
 
-    // TaskAdapter taskAdapter;
-//    @BindView(R.id.rv_user_task_fragment)
-//    RecyclerView rvRockFragment;
+    TaskAdapter taskAdapter;
+    @BindView(R.id.rv_user_task)
+    RecyclerView rvUserTask;
     ConnectionDetector connectionDetector;
     SharedPreferences sharedPreferences;
-//    @BindView(R.id.ll_offline_mode)
-//    LinearLayout tvOfflineMode;
-//    // UserTaskPresenter userTaskPresenter;
-//    @BindView(R.id.swipe_refresh)
-   // SwipeRefreshLayout pullToRefresh;
+    @BindView(R.id.ll_no_internet)
+    LinearLayout llNoInternet;
+    UserTaskPresenter userTaskPresenter;
+    @BindView(R.id.user_task_swipe_refresh)
+    SwipeRefreshLayout pullToRefresh;
     private static final String TAG = UserTaskFragment.class.getSimpleName();
 
-//
-//    @Override
-//    public void showRecyclerView(List<MusicModel> musicModelList) {
-//
-//        musicAdapter = new MusicAdapter(musicModelList);
-//        rvRockFragment.setAdapter(musicAdapter);
-//    }
+
+    @Override
+    public void showTaskList(List<TaskModel> taskModelList) {
+
+        taskAdapter = new TaskAdapter(taskModelList);
+        rvUserTask.setAdapter(taskAdapter);
+    }
 
     @Override
     protected int getLayout() {
@@ -52,60 +57,62 @@ public class UserTaskFragment extends BaseFragment {
     protected void init() {
         connectionDetector = new ConnectionDetector(getContext());
 
-        sharedPreferences = this.getActivity().getSharedPreferences(AppConstants.TOKEN_DATA, MODE_PRIVATE);
-
-        String tokenCheck = sharedPreferences.getString(AppConstants.TOKEN, "");
-        Log.d(TAG, "init: "+tokenCheck);
-
-        //rvRockFragment.setHasFixedSize(true);
+        rvUserTask.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        //rvRockFragment.setLayoutManager(layoutManager);
+        rvUserTask.setLayoutManager(layoutManager);
+        userTaskPresenter = new UserTaskImp(this, this.getActivity());
+        userTaskPresenter.loadUserTask(LoginActivity.userGroupId);
+        //pull to refresh action
+        pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                if (!connectionDetector.isConnected()) {
+                    llNoInternet.setVisibility(View.VISIBLE);
+                    AppUtils.showSnackbar(getActivity(), pullToRefresh,
+                            getString(R.string.no_internet_connection));
+                    pullToRefresh.setRefreshing(false);
+                } else {
+                    userTaskPresenter.loadUserTask(LoginActivity.userGroupId);
+                    llNoInternet.setVisibility(View.GONE);
+                    pullToRefresh.setRefreshing(false);
+                    AppUtils.showSnackbar(getActivity(), pullToRefresh,
+                            getString(R.string.data_loaded));
 
-        // userTaskPresenter = new UserTaskImp(this);
-        // userTaskPresenter.loadUserTask();
+                }
+            }
+        });
 
     }
 
-    //swipe to refresh
-//    private void swipeToRefresh() {
-//        if (!connectionDetector.isConnected()) {
-//           // tvOfflineMode.setVisibility(View.VISIBLE);
-//
-//            pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//                @Override
-//                public void onRefresh() {
-//                    AppUtils.showSnackbar(pullToRefresh, "No Internet Connection !");
-//                    pullToRefresh.setRefreshing(false);
-//                }
-//            });
-//
-//        } else {
-//            pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//                @Override
-//                public void onRefresh() {
-//                    //  userTaskPresenter.loadUserTask();
-//                 //   tvOfflineMode.setVisibility(View.GONE);
-//                    pullToRefresh.setRefreshing(false);
-//                    AppUtils.showSnackbar(pullToRefresh, "Data Refreshed");
-//                }
-//            });
-//
-//        }
-//
-//    }
-//
-//    private void checkpoint() {
-//
-//        if (!connectionDetector.isConnected()) {
-//            AppUtils.showSnackbar(pullToRefresh, "No Internet Connection !");
-//        }
-//    }
-//
-//    @Override
-//    public void onResume() {
-//        super.onResume();
-//        checkpoint();
-//        swipeToRefresh();
-//    }
-//
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        checkpoint();
+    }
+
+
+    @Override
+    public void checkpoint() {
+        if (connectionDetector.isConnected()) {
+            llNoInternet.setVisibility(View.GONE);
+
+            userTaskPresenter.loadUserTask(LoginActivity.userGroupId);
+
+        } else {
+            llNoInternet.setVisibility(View.VISIBLE);
+            AppUtils.showSnackbar(this.getActivity(), pullToRefresh,
+                    getString(R.string.no_internet_connection));
+        }
+    }
+
+
+    @OnClick({R.id.btn_retry})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.btn_retry:
+                checkpoint();
+                break;
+        }
+    }
 }

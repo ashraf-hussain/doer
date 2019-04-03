@@ -39,7 +39,6 @@ public class UserDashboardActivity extends BaseActivity {
 
         UserTabAdapter adapter = new UserTabAdapter(getSupportFragmentManager());
         adapter.addFragment(new UserTaskFragment(), "Task");
-        adapter.addFragment(new UserReviewFragment(), "Review");
         adapter.addFragment(new UserNoticeFragment(), "Notice");
 
         viewPager.setAdapter(adapter);
@@ -51,12 +50,10 @@ public class UserDashboardActivity extends BaseActivity {
     private void setupTabIcons() {
         tabLayout.getTabAt(0).setIcon(tabIcons[0]);
         tabLayout.getTabAt(1).setIcon(tabIcons[1]);
-        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
     }
 
     private int[] tabIcons = {
             R.drawable.ic_format_list_bulleted_black_24dp,
-            R.drawable.ic_rate_review_black_24dp,
             R.drawable.ic_notifications_none_black_24dp
     };
 

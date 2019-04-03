@@ -20,7 +20,7 @@ android {
 
 
 ext {
-    fcmVersion = '16.0.5'
+    fcmVersion = '16.0.8'
 }
 
 dependencies {
@@ -39,6 +39,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:16.0.0'
 
     //FCM
+
     implementation "com.google.firebase:firebase-core:${fcmVersion}"
     implementation 'com.google.firebase:firebase-messaging:17.5.0'
 
@@ -53,3 +54,4 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 
 }
+apply plugin: 'com.google.gms.google-services'
