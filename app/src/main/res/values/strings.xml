@@ -30,7 +30,6 @@
     <string name="no_internet_connection">No Internet Connection!</string>
     <string name="retry">Retry</string>
     <string name="fcm_token">FCM_TOKEN</string>
-    <string name="performance_note">Performance Note</string>
     <string name="data_loaded">Data Refreshed</string>
     <string name="create_group">Create Group</string>
     <string name="group_list">Group List</string>
@@ -40,4 +39,8 @@
     <string name="upload_task">Upload Task</string>
     <string name="deadline">Deadline</string>
     <string name="task_list">Task List</string>
+    <string name="review">Review</string>
+    <string name="marks">Marks</string>
+    <string name="performance_note">Performance Note</string>
+    <string name="submit_review">Submit Review</string>
 </resources>

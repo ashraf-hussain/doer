@@ -3,6 +3,7 @@ package com.project.doer.userReview;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.project.doer.common.SetupRetrofit;
 import com.project.doer.data.AppConstants;
@@ -30,6 +31,7 @@ public class UserReviewImp implements UserReviewPresenter {
     public void loadUserReview(int taskId, int userId) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(AppConstants.TOKEN_DATA, MODE_PRIVATE);
         String token = sharedPreferences.getString(AppConstants.TOKEN, "");
+
         SetupRetrofit setupRetrofit = new SetupRetrofit();
         Retrofit retrofit = setupRetrofit.getRetrofitWithAuthHeader(token);
         DoerApiInterface doerApiInterface = retrofit.create(DoerApiInterface.class);
@@ -39,18 +41,20 @@ public class UserReviewImp implements UserReviewPresenter {
             @Override
             public void onResponse(Call<ReviewModel> call, Response<ReviewModel> response) {
                 Log.d(TAG, "onResponse: " + response.code());
+                Toast.makeText(context, response.code()+"", Toast.LENGTH_SHORT).show();
+
                 Log.d(TAG, "onResponse: " + response.raw().request().url());
 
                 if (response.isSuccessful()) {
 
                     userReviewView.showUserReview(response.body());
-
                 }
-
             }
 
             @Override
             public void onFailure(Call<ReviewModel> call, Throwable t) {
+
+                Log.d(TAG, "onResponseFail: " + t);
 
             }
         });

@@ -44,6 +44,7 @@ public class CreateGroupImp implements CreateGroupPresenter {
             @Override
             public void onResponse(Call<GroupModel> call, Response<GroupModel> response) {
                 Log.d(TAG, "onResponse: " + response.code());
+                Toast.makeText(context, response.code()+"", Toast.LENGTH_SHORT).show();
                 Log.d(TAG, "onResponse: " + response.raw().request().url());
 
                 if (response.isSuccessful()) {

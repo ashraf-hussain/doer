@@ -3,6 +3,7 @@ package com.project.doer.userSignUp;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.project.doer.GroupList;
 import com.project.doer.common.SetupRetrofit;
@@ -39,12 +40,14 @@ public class UserSignupImp implements UserSignUpPresenter {
         SetupRetrofit setupRetrofit = new SetupRetrofit();
         Retrofit retrofit = setupRetrofit.getRetrofit();
         DoerApiInterface doerApiInterface = retrofit.create(DoerApiInterface.class);
-        doerApiInterface.actionUserSignup(signUpModel).enqueue(new Callback<SignUpModel>() {
+        doerApiInterface.actionUserSignUp(signUpModel).enqueue(new Callback<SignUpModel>() {
             private final String TAG = UserSignupImp.class.getName();
 
             @Override
             public void onResponse(Call<SignUpModel> call, Response<SignUpModel> response) {
                 Log.d(TAG, "onResponse: " + response.code());
+                Toast.makeText(context, response.code()+"", Toast.LENGTH_SHORT).show();
+
                 Log.d(TAG, "onResponse: " + response.raw().request().url());
 
                 if (response.isSuccessful()) {

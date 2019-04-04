@@ -6,10 +6,9 @@ import com.project.doer.group.GroupModel;
 import com.project.doer.login.LoginModel;
 import com.project.doer.signup.SignUpModel;
 import com.project.doer.userNotice.EventModel;
+import com.project.doer.userNotice.UserEventList;
 import com.project.doer.userReview.ReviewModel;
 import com.project.doer.userTask.UserTasklist;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -24,7 +23,7 @@ public interface DoerApiInterface {
 
 
     @GET("events")
-    Call<List<EventModel>> getEvents();
+    Call<UserEventList> getUserEvents();
 
     @GET("tasks")
     Call<UserTasklist> getUserTask();
@@ -33,7 +32,7 @@ public interface DoerApiInterface {
     Call<ReviewModel> getUsersReviews(@Path("taskId") int taskId, @Path("userId") int userId);
 
     @POST("user/signup")
-    Call<SignUpModel> actionUserSignup(@Body SignUpModel signUpModel);
+    Call<SignUpModel> actionUserSignUp(@Body SignUpModel signUpModel);
 
     @POST("user/login")
     Call<LoginModel> actionLogin(@Body LoginModel loginModel);
@@ -54,11 +53,11 @@ public interface DoerApiInterface {
     Call<TaskModel> postTask(@Body TaskModel taskModel);
 
     @GET("tasks/group/{groupId}")
-    Call<UserTasklist> getAllGroupTask(@Path("groupId") int groupId);
+    Call<UserTasklist> getGroupTask(@Path("groupId") int groupId);
 
     //Notice
     @POST("events")
-    Call<EventModel> getEvents(@Body EventModel eventModel);
+    Call<EventModel> postUserEvents(@Body EventModel eventModel);
 
     //Review
     @POST("reviews")

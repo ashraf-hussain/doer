@@ -41,7 +41,7 @@ public class LoginActivity extends BaseActivity implements BaseView {
     SharedPreferences sharedPreferences;
     @BindView(R.id.sv_assign_task)
     ScrollView svLogin;
-    public static int userGroupId;
+    public static int userGroupId, idOfUser;
     private static final String TAG = LoginActivity.class.getName();
 
 
@@ -54,10 +54,9 @@ public class LoginActivity extends BaseActivity implements BaseView {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         fcmAction();
-
         isLoggedIn();
 
-        loginPresenter = new LoginImp(this);
+        loginPresenter = new LoginImp(this, this);
 
         tvAdminSignUp.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -74,12 +73,18 @@ public class LoginActivity extends BaseActivity implements BaseView {
         SharedPreferences sharedPreferences = getSharedPreferences(AppConstants.TOKEN_DATA, MODE_PRIVATE);
         String token = sharedPreferences.getString(AppConstants.TOKEN, "");
 
-
-        if (!token.isEmpty()) {
-            Intent intent = new Intent(LoginActivity.this, GetAllGroupsActivity.class);
-            startActivity(intent);
-            finish();
-        }
+        Log.d(TAG, "isLoggedIn: " + token);
+//
+//        if (token.equalsIgnoreCase("")) {
+//            Intent intent = new Intent(LoginActivity.this, GetAllGroupsActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
+//        if (token.equalsIgnoreCase("")) {
+//            Intent intent = new Intent(LoginActivity.this, UserDashboardActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
     }
 
 
@@ -100,8 +105,9 @@ public class LoginActivity extends BaseActivity implements BaseView {
     @Override
     public void onSuccess(String token, String role, int groupId) {
         AppUtils.showToast(this, role);
-        userGroupId = groupId;
         save(AppConstants.TOKEN, token);
+        userGroupId = groupId;
+       // idOfUser = userId;
 
         if (role.equalsIgnoreCase("USER")) {
             Log.d(TAG, "onSuccess: " + role);
@@ -133,8 +139,8 @@ public class LoginActivity extends BaseActivity implements BaseView {
     }
 
     private void processLogin() {
-        email = etLoginEmail.getText().toString();
-        password = etLoginPassword.getText().toString();
+        email = etLoginEmail.getText().toString().trim();
+        password = etLoginPassword.getText().toString().trim();
         if (email.isEmpty()) {
             etLoginEmail.setError("Required!");
 
@@ -147,8 +153,6 @@ public class LoginActivity extends BaseActivity implements BaseView {
                 && !password.equalsIgnoreCase("")) {
             LoginModel loginModel = new LoginModel(email, password);
             loginPresenter.sendLoginData(loginModel);
-
-
         }
     }
 
@@ -169,7 +173,7 @@ public class LoginActivity extends BaseActivity implements BaseView {
                         String token = task.getResult().getToken();
                         save(AppConstants.FCM_TOKEN, token);
 
-                        Log.d(TAG, "fcm" + token);
+                        Log.d(TAG, "fcm" + " " + token);
 
                     }
                 });
