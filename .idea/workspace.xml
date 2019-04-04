@@ -10,171 +10,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="842d9cad-25fa-4ee9-9b64-d6fa3ef89c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_2_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_16_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_16_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_16_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_16_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_16_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_4_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_8_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/fcm/MyFirebaseMessagingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/AllGroupAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CustomAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGropusImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/AdminSignUpActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/AdminSignUpImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/AdminSignUpPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/AdminSignUpView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/GroupObjectModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/RoleModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/superAdmin/SuperAdminActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/ReviewAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/TaskAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTasklist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v21/ripple_effect.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_drop_down_circle_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_brightness_1_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_ios.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_mode_edit_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_signal_wifi_off_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_task_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_all_groups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_assign_task.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_no_data_found.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_no_internet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_super_admin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_review.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_all_groups.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/NoticeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticePresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_review_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_uplod_review.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_notice_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_notice.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_notice.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_exifinterface_27_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_exifinterface_27_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_16_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_16_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_16_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_16_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_16_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_16_0_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_placereport_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_placereport_16_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_5_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_2_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_2_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_5_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_17_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_17_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_17_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_17_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_17_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_17_0_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_5_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_hedgehog_ratingbar_app_1_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_hedgehog_ratingbar_app_1_1_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_8_8_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_8_8_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mikhaellopez_circularimageview_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mikhaellopez_circularimageview_3_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_16_0_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_5_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_2_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_5_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_17_0_3_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/AdminDashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/AdminDashboardActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/CreateGroupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/CreateGroupActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/TaskModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/TaskModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/common/SetupRetrofit.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/common/SetupRetrofit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/data/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/data/AppConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GroupModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GroupModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/BaseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/signup/SignUpModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/signup/SignUpModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/user/UserDashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/user/UserDashboardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/EventModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/EventModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/ReviewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/ReviewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_android_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_android_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_group_list_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_group_list_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_signup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_new_group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_new_group.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_signup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_spinner_platform_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_spinner_platform_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/TaskAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/TaskAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_review.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_review.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_task.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_task_review.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_task_review.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +88,7 @@
     <session id="-979137867">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -202,18 +97,19 @@
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
           <entry key="gradle" value="7" />
-          <entry key="java" value="231" />
+          <entry key="java" value="339" />
           <entry key="json" value="1" />
           <entry key="png" value="1" />
-          <entry key="xml" value="94" />
+          <entry key="xml" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -221,26 +117,26 @@
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="7" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="231" />
+          <entry key="JAVA" value="339" />
           <entry key="JSON" value="1" />
-          <entry key="XML" value="94" />
+          <entry key="XML" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
           <entry key="gradle" value="49" />
-          <entry key="java" value="9202" />
+          <entry key="java" value="11437" />
           <entry key="txt" value="44" />
-          <entry key="xml" value="3119" />
+          <entry key="xml" value="3591" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="49" />
-          <entry key="JAVA" value="9202" />
+          <entry key="JAVA" value="11437" />
           <entry key="PLAIN_TEXT" value="57" />
-          <entry key="XML" value="3119" />
+          <entry key="XML" value="3591" />
         </counts>
       </usages-collector>
     </session>
@@ -248,14 +144,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="-629">
+              <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
               <folding>
-                <element signature="e#1551#1552#0" expanded="true" />
-                <element signature="e#1601#1602#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1532#1533#0" expanded="true" />
+                <element signature="e#2055#2888#0" expanded="true" />
+                <element signature="e#2388#2430#0" expanded="true" />
+                <element signature="e#2669#2700#0" expanded="true" />
+                <element signature="e#2887#2888#0" expanded="true" />
+                <element signature="e#3233#3275#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/EventNoticeList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/user/UserDashboardActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticePresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -263,8 +221,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="31" selection-end-column="75" />
+            <state relative-caret-position="528">
+              <caret line="37" column="32" selection-start-line="37" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -273,80 +231,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="720">
+              <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/common/SetupRetrofit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="52" column="90" selection-start-line="52" selection-start-column="90" selection-end-line="52" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_task_list.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user_notice_detail.xml">
           <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="591">
+              <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#399#421#0" expanded="true" />
+                <element signature="e#479#502#0" expanded="true" />
+                <element signature="e#728#751#0" expanded="true" />
+                <element signature="e#1075#1095#0" expanded="true" />
+                <element signature="e#1412#1434#0" expanded="true" />
+                <element signature="e#1558#1578#0" expanded="true" />
+                <element signature="e#1911#1933#0" expanded="true" />
+                <element signature="e#2057#2077#0" expanded="true" />
+                <element signature="e#1856#1878#0" expanded="true" />
+                <element signature="e#2695#2717#0" expanded="true" />
+                <element signature="e#2813#2833#0" expanded="true" />
+                <element signature="e#2950#2972#0" expanded="true" />
+                <element signature="e#3090#3110#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="54" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -356,8 +274,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Interface" />
         <option value="Class" />
@@ -370,12 +288,20 @@
       <find>musicMode</find>
       <find>user</find>
       <find>User</find>
+      <find>TaskModel</find>
+      <find>event</find>
+      <find>task</find>
+      <find>pullToRefresh</find>
     </findStrings>
     <replaceStrings>
       <replace>userTask</replace>
       <replace>review</replace>
       <replace>admin</replace>
       <replace>Admin</replace>
+      <replace>EventModel</replace>
+      <replace>event_detail</replace>
+      <replace>event</replace>
+      <replace>userNoticeSwipeRefresh</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -392,63 +318,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_super_admin.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/AdminDashboardActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CustomAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_create_new_group.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_spinner_platform_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/CreateGroupActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/user/UserDashboardActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroups.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/TaskAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GroupModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGropusImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_task.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_asign_task.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_group_list_dashboard.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/AllGroupAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskList.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_all_groups.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_all_groups.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/GroupObjectDataModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/GroupObjectModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/CreateGroupActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_task.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_task.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_uplod_review.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/UserReviewActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/ReviewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/signup/SignUpModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/AdminSignUpActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/BaseView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/data/AppConstants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/TaskModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/button_review_background.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_task.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/TaskAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_task_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_user_review.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_notice.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/data/AppConstants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/EventModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeDetailctivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/NoticeAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_user_notice.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_user_notice_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeDetailActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticePresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/user/UserDashboardActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/EventNoticeList.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="966" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -458,26 +385,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="doer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="doer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="doer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -499,54 +406,46 @@
             <path>
               <item name="doer" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="doer" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="doer" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="doer" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="userNotice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="task&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/activity_admin_task_list.xml&#10;GROUP&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/activity_all_groups.xml&#10;tASKdE&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java&#10;lo&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;TASK&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java&#10;userRe&#9;PSI&#9;JAVA://com.project.doer.userReview.UserReviewFragment&#10;Set&#9;PSI&#9;JAVA://com.project.doer.common.SetupRetrofit&#10;uSER&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;aSS&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java&#10;lO&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;Log&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;user&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;tas&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;lOgin&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginImp.java&#10;c&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/content_main.xml&#10;ALL&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java&#10;CON&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/content_main.xml&#10;cR&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/CreateGroupActivity.java&#10;string&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/values/strings.xml&#10;uSERtas&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;aLL&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/group/AllGroupAdapter.java&#10;TaskIm&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;UserTaskFra&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;GroupA&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/group/AllGroupAdapter.java&#10;content&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/content_main.xml&#10;admin&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/AdminDashboardActivity.java&#10;loginIMP&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginImp.java&#10;imp&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/group/GetAllGropusImp.java&#10;Lo&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;CREATE&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/activity_create_new_group.xml&#10;UserTAS&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;userTAS&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;SignUpaC&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java&#10;u&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;UserAc&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/user/UserDashboardActivity.java&#10;tASKiM&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;Ta&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;PI&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/model/DoerApiInterface.java&#10;Admin&#9;PSI&#9;JAVA://com.project.doer.AdminDashboardActivity&#10;User&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java&#10;pR&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userReview/UserReviewPresenter.java&#10;uSERsI&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/UserSignUpView.java&#10;ac&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;aPI&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/model/DoerApiInterface.java&#10;Sign&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java&#10;sI&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java&#10;UserD&#9;PSI&#9;JAVA://com.project.doer.user.UserDashboardActivity&#10;UserDA&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java&#10;Tas&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;tASK&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/TaskAdapter.java" />
+    <property name="SearchEverywhereHistoryKey" value="UserDas&#9;PSI&#9;JAVA://com.project.doer.user.UserDashboardActivity&#10;TaskIM&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java&#10;adap&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/adapter_user_task.xml&#10;user&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/fragment_user_task.xml&#10;task&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/TaskAdapter.java&#10;fra&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/fragment_user_task.xml&#10;userTAS&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;imp&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;LO&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;tASKmo&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/TaskModel.java&#10;userTas&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;Lo&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;Signup&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java&#10;sIGN&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java&#10;rEVI&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userReview/ReviewModel.java&#10;Event&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userNotice/EventModel.java&#10;Su&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java&#10;loGIN&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;UserTas&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;userIMP&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java&#10;Ta&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java&#10;lOGI&#9;PSI&#9;JAVA://com.project.doer.login.LoginImp&#10;cR&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/CreateGroupActivity.java&#10;rEV&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminReview/AdminUserReviewActivity.java&#10;AdminTa&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java&#10;Assign&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java&#10;cRE&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/CreateGroupActivity.java&#10;lo&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginModel.java&#10;lO&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;review&#9;PSI&#9;JAVA://com.project.doer.adminReview.AdminUserReviewImp&#10;s&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/values/strings.xml&#10;LOGIN&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginImp.java&#10;loG&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;tasj&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java&#10;AdminTAS&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java&#10;Review&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/activity_user_review.xml&#10;a&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/adapter_admin_task.xml&#10;AdminTas&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java&#10;tASKdE&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java&#10;Do&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/model/DoerApiInterface.java&#10;userTA&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java&#10;lOg&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/login/LoginActivity.java&#10;GetAll&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java&#10;All&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java&#10;GROUP&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/res/layout/activity_all_groups.xml&#10;TASK&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java&#10;userRe&#9;PSI&#9;JAVA://com.project.doer.userReview.UserReviewFragment&#10;Set&#9;PSI&#9;JAVA://com.project.doer.common.SetupRetrofit&#10;uSER&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/userTask/UserTaskImp.java&#10;aSS&#9;FILE&#9;file:///Users/ashraf/Documents/doer/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="b1172a0d" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.project.doer.userNotice" />
+      <recent name="com.project.doer.userReview" />
+      <recent name="com.project.doer.adminReview" />
+      <recent name="com.project.doer.login" />
+      <recent name="com.project.doer.adminTask" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.project.doer.adminTask" />
+      <recent name="com.project.doer.common" />
+      <recent name="com.project.doer.user" />
+      <recent name="com.project.doer" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v21" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/project/doer" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.project.doer.common" />
-      <recent name="com.project.doer.user" />
-      <recent name="com.project.doer" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.project.doer.login" />
-      <recent name="com.project.doer.adminTask" />
-      <recent name="com.project.doer.group" />
-      <recent name="com.project.doer.superAdmin" />
-      <recent name="com.project.doer.userTask" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -656,7 +555,34 @@
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4993895" weight="0.32959184" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4981685" weight="0.38061225" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4981685" visible="true" weight="0.38061225" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.327551" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50183153" side_tool="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4993895" weight="0.327551" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.56734693" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32959184" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Android WiFi ADB" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.26495728" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25579977" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4993895" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4981685" visible="true" weight="0.38061225" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.327551" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50183153" side_tool="true" weight="0.32857144" />
@@ -672,164 +598,135 @@
       <window_info anchor="right" id="Android WiFi ADB" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Preview" order="6" weight="0.36019537" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32905984" />
-      <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Build Variants" order="4" side_tool="true" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="6" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32959184" />
-      <window_info anchor="bottom" id="Logcat" order="1" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32857144" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="5" weight="0.32857144" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Android WiFi ADB" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info active="true" anchor="right" id="Preview" order="6" visible="true" weight="0.32967034" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="response.rawResponse" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/CreateGroupActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignUpPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/CreateGroupImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="435">
+          <caret line="46" column="54" selection-start-line="46" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="483">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/common/ConnectionDetector.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="79" column="90" selection-start-line="79" selection-start-column="90" selection-end-line="79" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/UserSignupImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/TaskAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GroupModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-318">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userSignUp/SignUpActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="387">
+          <caret line="245" selection-start-line="245" selection-end-line="245" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_user_task.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/BaseView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="23" column="39" lean-forward="true" selection-end-line="98" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_create_new_group.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-end-line="81" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/TaskModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/signup/SignUpModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="477">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGropusImp.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="390">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_assign_task.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/AdminSignUpActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="1329">
+          <caret line="165" column="9" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -840,106 +737,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/button_background.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        <state>
+          <caret selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/CreateGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="125" column="63" selection-start-line="125" selection-start-column="63" selection-end-line="125" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_group_list_dashboard.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/AdminDashboardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/GetAllGroupsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/group/AllGroupAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_all_groups.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <element signature="e#293#316#0" expanded="true" />
-            <element signature="e#394#416#0" expanded="true" />
-            <element signature="e#448#470#0" expanded="true" />
-            <element signature="e#507#529#0" expanded="true" />
-            <element signature="e#471#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_all_groups.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/button_review_background.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <element signature="e#357#377#0" expanded="true" />
-            <element signature="e#411#432#0" expanded="true" />
-            <element signature="e#479#499#0" expanded="true" />
-            <element signature="e#1085#1104#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/ReviewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="86" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/TaskModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminReview/AdminUserReviewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-end-line="59" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskView.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -948,117 +814,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/GroupObjectDataModel.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/GroupObjectModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="10" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/BaseView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/data/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/user/UserDashboardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="20" selection-start-line="24" selection-end-line="25" />
+        <state relative-caret-position="225">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user_review.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="350">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1697#1719#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/common/SetupRetrofit.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="31" selection-end-column="75" />
+        <state relative-caret-position="348">
+          <caret line="72" column="54" lean-forward="true" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1067,58 +858,197 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="843">
+          <caret line="117" selection-start-line="30" selection-start-column="4" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user_notice.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/TaskAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="104" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user_task.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="47" lean-forward="true" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_user_task.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="17" lean-forward="true" selection-end-line="91" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/data/AppConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/NoticeAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#1629#2020#0" expanded="true" />
+            <element signature="e#2019#2020#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewImp.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_user_notice.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="e#392#414#0" expanded="true" />
+            <element signature="e#472#495#0" expanded="true" />
+            <element signature="e#721#744#0" expanded="true" />
+            <element signature="e#1061#1081#0" expanded="true" />
+            <element signature="e#1332#1354#0" expanded="true" />
+            <element signature="e#2577#2599#0" expanded="true" />
+            <element signature="e#2695#2715#0" expanded="true" />
+            <element signature="e#3070#3091#0" expanded="true" />
+            <element signature="e#3172#3194#0" expanded="true" />
+            <element signature="e#3121#3139#0" expanded="true" />
+            <element signature="e#3305#3324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/EventModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userReview/UserReviewFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userTask/UserTaskDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="52" column="90" selection-start-line="52" selection-start-column="90" selection-end-line="52" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_task_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/login/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AdminTaskListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user_notice_detail.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+          <folding>
+            <element signature="e#399#421#0" expanded="true" />
+            <element signature="e#479#502#0" expanded="true" />
+            <element signature="e#728#751#0" expanded="true" />
+            <element signature="e#1075#1095#0" expanded="true" />
+            <element signature="e#1412#1434#0" expanded="true" />
+            <element signature="e#1558#1578#0" expanded="true" />
+            <element signature="e#1911#1933#0" expanded="true" />
+            <element signature="e#2057#2077#0" expanded="true" />
+            <element signature="e#1856#1878#0" expanded="true" />
+            <element signature="e#2695#2717#0" expanded="true" />
+            <element signature="e#2813#2833#0" expanded="true" />
+            <element signature="e#2950#2972#0" expanded="true" />
+            <element signature="e#3090#3110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+          <folding>
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#2055#2888#0" expanded="true" />
+            <element signature="e#2388#2430#0" expanded="true" />
+            <element signature="e#2669#2700#0" expanded="true" />
+            <element signature="e#2887#2888#0" expanded="true" />
+            <element signature="e#3233#3275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/user/UserDashboardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/adminTask/AssignTaskImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="37" column="32" selection-start-line="37" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/UserNoticeImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/model/DoerApiInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/doer/userNotice/EventNoticeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

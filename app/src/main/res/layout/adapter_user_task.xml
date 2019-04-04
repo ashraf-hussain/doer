@@ -73,12 +73,16 @@
                 tools:text="April 2, 2019 - 12 pm" />
 
             <TextView
+                android:id="@+id/tv_reviewed"
+                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|bottom"
                 android:layout_marginStart="@dimen/margin_small"
-                android:text="@string/readmore"
-                android:textColor="@color/colorSecondaryText"
+                android:background="@drawable/button_review_background"
+                android:text="Reviewed"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/colorLightWhite"
                 android:textSize="@dimen/small_size"
                 android:typeface="serif" />
         </LinearLayout>

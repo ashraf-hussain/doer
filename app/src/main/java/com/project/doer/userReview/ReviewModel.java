@@ -14,7 +14,7 @@ public class ReviewModel {
     private Integer revieweeId;
     @SerializedName("task_id")
 
-    private Integer taskId;
+    private int taskId;
     @SerializedName("marks")
 
     private Integer marks;
@@ -39,9 +39,13 @@ public class ReviewModel {
     @SerializedName("status")
 
     private Boolean status;
+    @SerializedName("notify")
+
+    private Boolean notify;
 
     public ReviewModel(Integer reviewerId, Integer revieweeId, Integer taskId, Integer marks,
-                       String review, Integer rating, String performanceNote, String deadline) {
+                       String review, Integer rating, String performanceNote, String deadline,
+                       Boolean notify) {
         this.reviewerId = reviewerId;
         this.revieweeId = revieweeId;
         this.taskId = taskId;
@@ -50,6 +54,7 @@ public class ReviewModel {
         this.rating = rating;
         this.performanceNote = performanceNote;
         this.deadline = deadline;
+        this.notify = notify;
     }
 
     public Integer getId() {
@@ -147,5 +152,13 @@ public class ReviewModel {
     public void setStatus(Boolean status) {
         this.status = status;
     }
-    
+
+    public Boolean getNotify() {
+        return notify;
+    }
+
+    public void setNotify(Boolean notify) {
+        this.notify = notify;
+    }
+
 }

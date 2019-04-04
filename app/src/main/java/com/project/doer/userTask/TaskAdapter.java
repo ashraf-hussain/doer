@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import com.project.doer.R;
 import com.project.doer.adminTask.TaskModel;
 import com.project.doer.data.AppConstants;
+import com.project.doer.userReview.UserReviewActivity;
 
 import java.util.List;
 
@@ -25,9 +27,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     private static final String TAG = TaskAdapter.class.getName();
 
 
-    private Context context;
-    private List<TaskModel> taskModelList;
-    private int lastPosition = -1;
+     Context context;
+     List<TaskModel> taskModelList;
+     int lastPosition = -1;
 
 
     public TaskAdapter(List<TaskModel> userTaskList) {
@@ -50,14 +52,19 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         holder.tvTaskTitle.setText(taskModel.getTitle());
         holder.tvTaskDescription.setText(taskModel.getDescription());
         holder.tvTaskDeadline.setText(taskModel.getDeadline());
-        holder.cvUserTaskAdapter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(context, UserTaskDetailActivity.class);
-                i.putExtra(AppConstants.TASK_DETAIL, taskModel);
-                context.startActivity(i);
-            }
-        });
+
+        if (taskModel.getReviewed()) {
+            holder.tvReviewed.setVisibility(View.VISIBLE);
+            holder.cvUserTaskAdapter.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(context, UserReviewActivity.class);
+                    i.putExtra(AppConstants.TASK_DETAIL, taskModel);
+                    Log.d(TAG, "onClick: "+taskModel.getTitle());
+                    context.startActivity(i);
+                }
+            });
+        }
     }
 
     @Override
@@ -79,6 +86,8 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
         @BindView(R.id.tv_task_title)
         TextView tvTaskTitle;
+        @BindView(R.id.tv_reviewed)
+        TextView tvReviewed;
         @BindView(R.id.tv_task_description)
         TextView tvTaskDescription;
         @BindView(R.id.tv_task_deadline)

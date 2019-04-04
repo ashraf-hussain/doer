@@ -3,6 +3,7 @@ package com.project.doer.userTask;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.project.doer.adminTask.TaskModel;
 import com.project.doer.common.SetupRetrofit;
@@ -25,7 +26,7 @@ public class UserTaskImp implements UserTaskPresenter {
     private Context context;
 
 
-    UserTaskImp(UserTaskView userTaskView, Context context) {
+   public UserTaskImp(UserTaskView userTaskView, Context context) {
         this.userTaskView = userTaskView;
         this.context = context;
     }
@@ -41,13 +42,15 @@ public class UserTaskImp implements UserTaskPresenter {
         SetupRetrofit setupRetrofit = new SetupRetrofit();
         Retrofit retrofit = setupRetrofit.getRetrofitWithAuthHeader(token);
         DoerApiInterface doerApiInterface = retrofit.create(DoerApiInterface.class);
-        doerApiInterface.getAllGroupTask(groupId).enqueue(new Callback<UserTasklist>() {
+        doerApiInterface.getGroupTask(groupId).enqueue(new Callback<UserTasklist>() {
             private final String TAG = UserTaskImp.class.getName();
 
             @Override
             public void onResponse(Call<UserTasklist> call, Response<UserTasklist> response) {
 
                 Log.d(TAG, "onResponse: " + response.code());
+                Toast.makeText(context, response.code()+"", Toast.LENGTH_SHORT).show();
+
                 Log.d(TAG, "onResponse: " + response.raw().request().url());
                 if (response.isSuccessful()) {
 

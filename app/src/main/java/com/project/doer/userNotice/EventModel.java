@@ -2,7 +2,9 @@ package com.project.doer.userNotice;
 
 import com.google.gson.annotations.SerializedName;
 
-public class EventModel {
+import java.io.Serializable;
+
+public class EventModel implements Serializable {
 
 
     @SerializedName("title")
@@ -27,8 +29,11 @@ public class EventModel {
 
     private String deadline;
 
+    @SerializedName("notify")
+    private Boolean notify;
+
     public EventModel(String title, String description, String venue, String eventImg,
-                      String eventTime, String otherInfo, String deadline) {
+                      String eventTime, String otherInfo, String deadline, Boolean notify) {
         this.title = title;
         this.description = description;
         this.venue = venue;
@@ -36,6 +41,7 @@ public class EventModel {
         this.eventTime = eventTime;
         this.otherInfo = otherInfo;
         this.deadline = deadline;
+        this.notify = notify;
     }
 
     public String getTitle() {
@@ -93,5 +99,14 @@ public class EventModel {
     public void setDeadline(String deadline) {
         this.deadline = deadline;
     }
+
+    public Boolean getNotify() {
+        return notify;
+    }
+
+    public void setNotify(Boolean notify) {
+        this.notify = notify;
+    }
+
 
 }

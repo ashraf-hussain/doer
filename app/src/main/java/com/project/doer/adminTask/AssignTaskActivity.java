@@ -77,7 +77,7 @@ public class AssignTaskActivity extends BaseActivity implements AssignTaskView {
         if (!title.equalsIgnoreCase("")
                 && !description.equalsIgnoreCase("")
                 && !deadline.equalsIgnoreCase("")) {
-            TaskModel taskModel = new TaskModel(title, description, deadline, groupId);
+            TaskModel taskModel = new TaskModel(title, description, deadline, groupId,true);
             assignTaskPresenter.uploadTask(taskModel);
 
 

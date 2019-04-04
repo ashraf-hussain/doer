@@ -3,6 +3,7 @@ package com.project.doer.adminTask;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.project.doer.common.SetupRetrofit;
 import com.project.doer.data.AppConstants;
@@ -40,12 +41,14 @@ public class AdminTaskListImp implements AdminTaskListPresenter {
         SetupRetrofit setupRetrofit = new SetupRetrofit();
         Retrofit retrofit = setupRetrofit.getRetrofitWithAuthHeader(token);
         DoerApiInterface doerApiInterface = retrofit.create(DoerApiInterface.class);
-        doerApiInterface.getAllGroupTask(groupId).enqueue(new Callback<UserTasklist>() {
+        doerApiInterface.getGroupTask(groupId).enqueue(new Callback<UserTasklist>() {
             @Override
             public void onResponse(Call<UserTasklist> call, Response<UserTasklist> response) {
                 final String TAG = AssignTaskImp.class.getName();
 
                 Log.d(TAG, "onResponse: " + response.code());
+                Toast.makeText(context, response.code()+"", Toast.LENGTH_SHORT).show();
+
                 Log.d(TAG, "onResponse: " + response.raw().request().url());
                 if (response.isSuccessful()) {
 

@@ -35,6 +35,9 @@
         <activity android:name=".group.GetAllGroupsActivity" />
         <activity android:name=".adminTask.AssignTaskActivity" />
         <activity android:name=".adminTask.AdminTaskListActivity" />
+        <activity android:name=".adminReview.AdminUserReviewActivity" />
+        <activity android:name=".userReview.UserReviewActivity" />
+        <activity android:name=".userNotice.UserNoticeDetailActivity" />
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>

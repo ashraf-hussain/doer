@@ -11,10 +11,12 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.project.doer.common.BaseActivity;
+import com.project.doer.data.AppUtils;
 import com.project.doer.group.CreateGroupImp;
 import com.project.doer.group.CreateGroupPresenter;
 import com.project.doer.group.CreateGroupView;
 import com.project.doer.group.CustomAdapter;
+import com.project.doer.group.GetAllGroupsActivity;
 import com.project.doer.group.GroupModel;
 import com.project.doer.user.UserDashboardActivity;
 
@@ -123,7 +125,8 @@ public class CreateGroupActivity extends BaseActivity implements AdapterView.OnI
 
     @Override
     public void onSuccess(String msg) {
-        Intent i = new Intent(CreateGroupActivity.this, AdminDashboardActivity.class);
+        AppUtils.showToast(this,msg);
+        Intent i = new Intent(CreateGroupActivity.this, GetAllGroupsActivity.class);
         startActivity(i);
         finish();
     }

@@ -193,11 +193,11 @@ public class SignUpActivity extends BaseActivity implements UserSignUpView {
 
     private void signupProcess() {
         // Validating user's data.
-        userEmail = etUserEmail.getText().toString();
-        userFirstName = etUserFirstName.getText().toString();
-        userLastName = etUserLastName.getText().toString();
-        userPassword = etUserPassword.getText().toString();
-        userConfrimPassword = etUserRepeatPassword.getText().toString();
+        userEmail = etUserEmail.getText().toString().trim();
+        userFirstName = etUserFirstName.getText().toString().trim();
+        userLastName = etUserLastName.getText().toString().trim();
+        userPassword = etUserPassword.getText().toString().trim();
+        userConfrimPassword = etUserRepeatPassword.getText().toString().trim();
 
         if (userFirstName.isEmpty()) {
             etUserFirstName.setError("Required!");
@@ -239,8 +239,12 @@ public class SignUpActivity extends BaseActivity implements UserSignUpView {
 
 
             SignUpModel signUpModel = new SignUpModel(userFirstName, userLastName, userEmail,
-                    userPassword, userDob, "false", userGroupId, fcmToken);
+                    userPassword, userDob, "true", userGroupId, fcmToken.trim());
+
+
             userSignUpPresenter.sendSignUpData(signUpModel);
+
+
             Log.d(TAG, userFirstName + " " + userLastName + " "
                     + userDob + " " + userPassword + " " + userEmail + " "
                     + userGroup + " " + userJoinedDate + " " + userGroupId);

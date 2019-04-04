@@ -55,7 +55,7 @@ public class AdminTaskListActivity extends BaseActivity implements AdminTaskList
 
     @Override
     public void showAllTaskCreated(List<TaskModel> taskModelList) {
-        TaskAdapter taskAdapter = new TaskAdapter(taskModelList);
+        AdminTaskAdapter taskAdapter = new AdminTaskAdapter(taskModelList);
         rvAdminTaskList.setAdapter(taskAdapter);
     }
 }

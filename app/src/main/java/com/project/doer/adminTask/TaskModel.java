@@ -20,17 +20,37 @@ public class TaskModel implements Serializable {
     @SerializedName("group_id")
 
     private Integer groupId;
+    @SerializedName("notify")
 
-    public TaskModel(String title, String description, String deadline, Integer groupId) {
+    private Boolean notify;
+
+    @SerializedName("is_reviewed")
+
+    private Boolean isReviewed;
+
+    public Boolean getReviewed() {
+        return isReviewed;
+    }
+
+    public void setReviewed(Boolean reviewed) {
+        isReviewed = reviewed;
+    }
+
+    public TaskModel(String title, String description, String deadline, Integer groupId, Boolean notify) {
         this.title = title;
         this.description = description;
         this.deadline = deadline;
         this.groupId = groupId;
+        this.notify = notify;
     }
 
-    public String getId() { return id; }
+    public String getId() {
+        return id;
+    }
 
-    public void setId(String id) { this.id = id; }
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -62,5 +82,13 @@ public class TaskModel implements Serializable {
 
     public void setGroupId(Integer groupId) {
         this.groupId = groupId;
+    }
+
+    public Boolean getNotify() {
+        return notify;
+    }
+
+    public void setNotify(Boolean notify) {
+        this.notify = notify;
     }
 }
