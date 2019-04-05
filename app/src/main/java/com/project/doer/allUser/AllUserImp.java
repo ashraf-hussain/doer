@@ -54,6 +54,7 @@ public class AllUserImp implements AllUserPresenter {
 
                     allUserDataList = response.body();
                     allUsersModelList = allUserDataList.getAllUsersModelList();
+
                     allUserView.showAllUsers(allUsersModelList);
                 }
             }

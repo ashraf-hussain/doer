@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/sv_user_signup"
     android:orientation="vertical"
-    android:padding="54dp">
+    android:padding="32dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="32dp"
             android:text="@string/sign_up"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"
@@ -29,7 +28,6 @@
                 android:id="@+id/et_user_first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_person_outline_black_24dp"
                 android:drawablePadding="8dp"
                 android:hint="@string/first_name"
                 android:inputType="text"
@@ -53,7 +51,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:drawableStart="@drawable/ic_person_outline_black_24dp"
                 android:drawablePadding="8dp"
                 android:hint="@string/last_name"
                 android:inputType="text"
@@ -158,9 +155,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:drawableStart="@drawable/ic_group_black_24dp"
+                android:drawableStart="@drawable/ic_group"
                 android:drawablePadding="8dp"
                 android:hint="@string/your_batch"
+                android:layout_gravity=""
                 android:inputType="text"
                 android:maxLines="1"
                 android:paddingTop="16dp"

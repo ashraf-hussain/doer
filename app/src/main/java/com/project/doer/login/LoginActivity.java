@@ -165,11 +165,8 @@ public class LoginActivity extends BaseActivity implements BaseView {
                     @Override
                     public void onComplete(@NonNull Task<InstanceIdResult> task) {
                         if (!task.isSuccessful()) {
-                            //To do//
-
                             return;
                         }
-
                         // Get the Instance ID token//
                         String token = task.getResult().getToken();
                         save(AppConstants.FCM_TOKEN, token);
