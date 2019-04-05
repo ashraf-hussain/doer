@@ -25,7 +25,7 @@ public class UserNoticeImp implements UserNoticePresenter {
     private UserEventList userEventList;
     List<EventModel> eventModelList;
 
-    UserNoticeImp(Context context, UserNoticeView userNoticeView) {
+    public UserNoticeImp(Context context, UserNoticeView userNoticeView) {
         this.context = context;
         this.userNoticeView = userNoticeView;
     }

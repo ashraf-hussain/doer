@@ -20,8 +20,6 @@
             android:id="@+id/tv_task_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:maxLines="1"
             android:textColor="@color/colorPrimaryText"
             android:textSize="@dimen/medium_size"
             android:textStyle="bold"

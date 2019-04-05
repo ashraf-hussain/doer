@@ -2,6 +2,7 @@ package com.project.doer.userNotice;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.TextView;
@@ -12,6 +13,7 @@ import com.project.doer.data.AppConstants;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class UserNoticeDetailActivity extends BaseActivity {
 
@@ -28,6 +30,8 @@ public class UserNoticeDetailActivity extends BaseActivity {
     TextView tvEventNoticeOtherInfo;
     @BindView(R.id.cv_user_event_detail_adapter)
     CardView cvUserEventDetailAdapter;
+    @BindView(R.id.tb_title)
+    TextView tbTitle;
 
     @Override
     protected int getLayout() {
@@ -36,6 +40,9 @@ public class UserNoticeDetailActivity extends BaseActivity {
 
     @Override
     protected void init() {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+        tbTitle.setText(R.string.event);
         Intent intent = getIntent();
         if (intent.getExtras() != null) {
             eventModel = (EventModel) intent.getSerializableExtra(AppConstants.NOTICE_DETAIL);
@@ -49,5 +56,10 @@ public class UserNoticeDetailActivity extends BaseActivity {
                 tvEventNoticeOtherInfo.setText(eventModel.getOtherInfo());
             }
         }
+    }
+
+    @OnClick(R.id.toolbar)
+    public void onViewClicked() {
+        onBackPressed();
     }
 }

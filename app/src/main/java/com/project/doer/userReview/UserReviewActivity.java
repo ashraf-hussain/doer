@@ -21,6 +21,7 @@ import com.project.doer.model.DoerApiInterface;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -48,6 +49,8 @@ public class UserReviewActivity extends AppCompatActivity {
     CardView cvUserReviewAdapter;
     @BindView(R.id.ll_user_review_adapter)
     LinearLayout llUserReviewAdapter;
+    @BindView(R.id.tb_title)
+    TextView tbTitle;
 
 
     @Override
@@ -55,7 +58,7 @@ public class UserReviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_review);
         ButterKnife.bind(this);
-
+        tbTitle.setText(R.string.task_review);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         Intent intent = getIntent();
@@ -102,4 +105,8 @@ public class UserReviewActivity extends AppCompatActivity {
 
     }
 
+    @OnClick(R.id.toolbar)
+    public void onViewClicked() {
+        onBackPressed();
+    }
 }

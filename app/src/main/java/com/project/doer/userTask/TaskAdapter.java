@@ -27,9 +27,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     private static final String TAG = TaskAdapter.class.getName();
 
 
-     Context context;
-     List<TaskModel> taskModelList;
-     int lastPosition = -1;
+     private Context context;
+     private List<TaskModel> taskModelList;
+     private int lastPosition = -1;
 
 
     public TaskAdapter(List<TaskModel> userTaskList) {

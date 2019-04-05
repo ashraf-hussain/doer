@@ -48,15 +48,17 @@ public class LoginImp implements LoginPresenter {
                     //   int userId = Integer.parseInt(loginModelResponse.getId()+"");
                     String token = loginModelResponse.getToken();
 
+                    //Role
                     RoleModel roleModel = loginModelResponse.getRoleModel();
                     String role = roleModel.getRole();
 
+                    //Group
                     GroupModel groupModel = loginModelResponse.getGroupModel();
 
                     int groupId = groupModel.getId();
                     baseView.onSuccess(token, role, groupId);
 
-                    Log.d(TAG, "onResponse: " + token + " " + role + " " + groupId);
+                  //  Log.d(TAG, "onResponse: " + token + " " + role + " " + groupId);
                 }
                 if (response.code() == 400) {
 

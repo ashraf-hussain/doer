@@ -8,7 +8,7 @@ import android.widget.Toast;
 import com.project.doer.common.SetupRetrofit;
 import com.project.doer.data.AppConstants;
 import com.project.doer.model.DoerApiInterface;
-import com.project.doer.userTask.UserTasklist;
+import com.project.doer.userTask.UserDatalist;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class AdminTaskListImp implements AdminTaskListPresenter {
 
     private List<TaskModel> taskLists;
-    private UserTasklist userTasklist;
+    private UserDatalist userDatalist;
     private AdminTaskListView adminTaskListView;
     private Context context;
 
@@ -41,9 +41,9 @@ public class AdminTaskListImp implements AdminTaskListPresenter {
         SetupRetrofit setupRetrofit = new SetupRetrofit();
         Retrofit retrofit = setupRetrofit.getRetrofitWithAuthHeader(token);
         DoerApiInterface doerApiInterface = retrofit.create(DoerApiInterface.class);
-        doerApiInterface.getGroupTask(groupId).enqueue(new Callback<UserTasklist>() {
+        doerApiInterface.getGroupTask(groupId).enqueue(new Callback<UserDatalist>() {
             @Override
-            public void onResponse(Call<UserTasklist> call, Response<UserTasklist> response) {
+            public void onResponse(Call<UserDatalist> call, Response<UserDatalist> response) {
                 final String TAG = AssignTaskImp.class.getName();
 
                 Log.d(TAG, "onResponse: " + response.code());
@@ -52,14 +52,14 @@ public class AdminTaskListImp implements AdminTaskListPresenter {
                 Log.d(TAG, "onResponse: " + response.raw().request().url());
                 if (response.isSuccessful()) {
 
-                    userTasklist = response.body();
-                    taskLists = userTasklist.getTaskList();
+                    userDatalist = response.body();
+                    taskLists = userDatalist.getTaskList();
                     adminTaskListView.showAllTaskCreated(taskLists);
                 }
             }
 
             @Override
-            public void onFailure(Call<UserTasklist> call, Throwable t) {
+            public void onFailure(Call<UserDatalist> call, Throwable t) {
 
             }
         });

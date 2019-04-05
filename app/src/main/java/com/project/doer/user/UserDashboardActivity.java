@@ -1,22 +1,21 @@
 package com.project.doer.user;
 
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
-import android.view.Window;
-import android.view.WindowManager;
-
+import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 import com.project.doer.R;
 import com.project.doer.common.BaseActivity;
 import com.project.doer.userNotice.UserNoticeFragment;
-import com.project.doer.userReview.UserReviewFragment;
 import com.project.doer.userTask.UserTaskFragment;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class UserDashboardActivity extends BaseActivity {
 
@@ -25,6 +24,10 @@ public class UserDashboardActivity extends BaseActivity {
     TabLayout tabLayout;
     @BindView(R.id.viewPager)
     ViewPager viewPager;
+    @BindView(R.id.tb_title)
+    TextView tbTitle;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     @Override
     protected int getLayout() {
@@ -36,7 +39,7 @@ public class UserDashboardActivity extends BaseActivity {
     protected void init() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-
+        tbTitle.setText(R.string.dashbaord);
         UserTabAdapter adapter = new UserTabAdapter(getSupportFragmentManager());
         adapter.addFragment(new UserTaskFragment(), "Task");
         adapter.addFragment(new UserNoticeFragment(), "Notice");
@@ -56,5 +59,4 @@ public class UserDashboardActivity extends BaseActivity {
             R.drawable.ic_format_list_bulleted_black_24dp,
             R.drawable.ic_notifications_none_black_24dp
     };
-
 }

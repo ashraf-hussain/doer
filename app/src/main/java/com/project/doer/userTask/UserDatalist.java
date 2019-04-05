@@ -5,7 +5,7 @@ import com.project.doer.adminTask.TaskModel;
 
 import java.util.List;
 
-public class UserTasklist {
+public class UserDatalist {
     public List<TaskModel> getTaskList() {
         return taskLists;
     }

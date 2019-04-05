@@ -1,6 +1,7 @@
 package com.project.doer.adminReview;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.widget.Button;
@@ -9,15 +10,24 @@ import android.widget.ScrollView;
 
 import com.project.doer.R;
 import com.project.doer.adminTask.AdminTaskListActivity;
-import com.project.doer.adminTask.TaskModel;
+import com.project.doer.allUser.AllUserActivity;
+import com.project.doer.allUser.AllUsersModel;
 import com.project.doer.common.BaseActivity;
 import com.project.doer.data.AppConstants;
 import com.project.doer.data.AppUtils;
 import com.project.doer.userReview.ReviewModel;
+
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class AdminUserReviewActivity extends BaseActivity implements AdminUserReviewView {
+
+    String taskTitle, review, performanceNote;
+    int marks;
+    AllUsersModel allUsersModel;
+    int userId, taskId;
+    AdminUserReviewPresenter adminUserReviewPresenter;
     @BindView(R.id.et_review_title)
     EditText etReviewTitle;
     @BindView(R.id.et_review_marks)
@@ -30,11 +40,6 @@ public class AdminUserReviewActivity extends BaseActivity implements AdminUserRe
     Button btnUploadReview;
     @BindView(R.id.sv_review_task)
     ScrollView svReviewTask;
-    String taskTitle, review, performanceNote;
-    int marks;
-    TaskModel taskModel;
-    int taskId;
-    AdminUserReviewPresenter adminUserReviewPresenter;
 
     @Override
     protected int getLayout() {
@@ -45,12 +50,13 @@ public class AdminUserReviewActivity extends BaseActivity implements AdminUserRe
     protected void init() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+        taskId = AllUserActivity.taskId;
 
         Intent intent = getIntent();
         if (intent.getExtras() != null) {
-            taskModel = (TaskModel) intent.getSerializableExtra(AppConstants.REVIEW);
-            taskId = Integer.parseInt(taskModel.getId());
-            Log.d("iiiii", "init: " + taskId);
+            allUsersModel = (AllUsersModel) intent.getSerializableExtra(AppConstants.All_USER);
+            userId = Integer.parseInt(allUsersModel.getId());
+            Log.d("user", "init: " + userId);
 
             adminUserReviewPresenter = new AdminUserReviewImp(this, this);
         }
@@ -84,8 +90,8 @@ public class AdminUserReviewActivity extends BaseActivity implements AdminUserRe
                     && !review.equalsIgnoreCase("")
                     && !performanceNote.equalsIgnoreCase("")) {
 
-                ReviewModel reviewModel = new ReviewModel(1, 3, taskId, marks,
-                        review, 1, performanceNote, "2019-09-09",true);
+                ReviewModel reviewModel = new ReviewModel(1, userId, taskId, marks,
+                        review, 1, performanceNote, "2019-09-09", true);
                 adminUserReviewPresenter.submitUserReviewData(reviewModel);
 
             }
@@ -107,4 +113,5 @@ public class AdminUserReviewActivity extends BaseActivity implements AdminUserRe
         AppUtils.showToast(this, msg);
 
     }
+
 }

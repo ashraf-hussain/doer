@@ -15,6 +15,17 @@ public class TaskModel implements Serializable {
 
     private String description;
     @SerializedName("deadline")
+    private String time;
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    @SerializedName("time")
 
     private String deadline;
     @SerializedName("group_id")
@@ -36,12 +47,13 @@ public class TaskModel implements Serializable {
         isReviewed = reviewed;
     }
 
-    public TaskModel(String title, String description, String deadline, Integer groupId, Boolean notify) {
+    public TaskModel(String title, String description, String deadline, Integer groupId,String time,Boolean notify) {
         this.title = title;
         this.description = description;
         this.deadline = deadline;
         this.groupId = groupId;
         this.notify = notify;
+        this.time = time;
     }
 
     public String getId() {

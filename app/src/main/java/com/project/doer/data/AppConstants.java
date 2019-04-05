@@ -14,4 +14,5 @@ public class AppConstants {
     public static final String GROUP_ID = "group_id";
     public static final String REVIEW = "review";
     public static final String NOTICE_DETAIL = "notice_detail";
+    public static final String All_USER = "all_user";
 }

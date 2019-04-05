@@ -3,6 +3,7 @@ package com.project.doer;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
@@ -18,13 +19,13 @@ import com.project.doer.group.CreateGroupView;
 import com.project.doer.group.CustomAdapter;
 import com.project.doer.group.GetAllGroupsActivity;
 import com.project.doer.group.GroupModel;
-import com.project.doer.user.UserDashboardActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class CreateGroupActivity extends BaseActivity implements AdapterView.OnItemSelectedListener
@@ -48,6 +49,8 @@ public class CreateGroupActivity extends BaseActivity implements AdapterView.OnI
 
     @Override
     protected void init() {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         calendar = Calendar.getInstance();
         //etGroupStartDate.setEnabled(false);
         spinnerPlatformList.setPrompt(getResources().getString(R.string.select_platform));
@@ -125,7 +128,7 @@ public class CreateGroupActivity extends BaseActivity implements AdapterView.OnI
 
     @Override
     public void onSuccess(String msg) {
-        AppUtils.showToast(this,msg);
+        AppUtils.showToast(this, msg);
         Intent i = new Intent(CreateGroupActivity.this, GetAllGroupsActivity.class);
         startActivity(i);
         finish();
@@ -150,5 +153,8 @@ public class CreateGroupActivity extends BaseActivity implements AdapterView.OnI
         }
     }
 
-
+    @OnClick(R.id.back_button)
+    public void onViewClicked() {
+        onBackPressed();
+    }
 }

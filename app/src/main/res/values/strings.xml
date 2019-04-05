@@ -43,4 +43,23 @@
     <string name="marks">Marks</string>
     <string name="performance_note">Performance Note</string>
     <string name="submit_review">Submit Review</string>
+    <string name="review_developers">Review Developers</string>
+    <string name="event_title">Event Title</string>
+    <string name="event">Event</string>
+    <string name="venue">Venue</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="upload_event">Upload Event</string>
+    <string name="extra_info_opt">Extra Info (opt)</string>
+    <string name="task">Task</string>
+    <string name="groups">Groups</string>
+    <string name="time">Time</string>
+    <string name="all_events">All Events</string>
+    <string name="admin_landing">Admin  Landing</string>
+    <string name="all_groups">All Groups</string>
+    <string name="all_task">All Task</string>
+    <string name="all_developers">All Developers</string>
+    <string name="dashbaord">Dashboard</string>
+    <string name="task_review">Task Review</string>
+    <string name="reviewed_task">Reviewed Task</string>
 </resources>
