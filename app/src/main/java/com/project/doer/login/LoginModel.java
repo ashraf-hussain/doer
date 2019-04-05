@@ -5,16 +5,11 @@ import com.project.doer.group.GroupModel;
 
 public class LoginModel {
 
-    //    public int getId() {
-//        return id;
-//    }
-//
-//    public void setId(int id) {
-//        this.id = id;
-//    }
-//
+
+
 //    @SerializedName("id")
 //    private int id;
+
     @SerializedName("email")
     private String email;
     @SerializedName("password")
@@ -74,4 +69,12 @@ public class LoginModel {
     public void setPassword(String password) {
         this.password = password;
     }
+
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 }

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.google.gson.JsonObject;
 import com.project.doer.common.SetupRetrofit;
 import com.project.doer.group.GroupModel;
 import com.project.doer.model.DoerApiInterface;
@@ -45,7 +46,10 @@ public class LoginImp implements LoginPresenter {
 
                 if (response.isSuccessful()) {
                     LoginModel loginModelResponse = response.body();
-                    //   int userId = Integer.parseInt(loginModelResponse.getId()+"");
+
+
+                   // int userId = Integer.parseInt(response.body().getId()+"");
+                   // Log.d(TAG, "onResponse: "+userId+"");
                     String token = loginModelResponse.getToken();
 
                     //Role
@@ -63,6 +67,7 @@ public class LoginImp implements LoginPresenter {
                 if (response.code() == 400) {
 
                     try {
+                        Log.d(TAG, "onResponse: "+response.errorBody().string());
                         Toast.makeText(context, response.errorBody().string(), Toast.LENGTH_LONG).show();
                     } catch (IOException e) {
                         e.printStackTrace();

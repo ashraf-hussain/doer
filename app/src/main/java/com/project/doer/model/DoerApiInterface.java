@@ -5,6 +5,7 @@ import com.project.doer.adminTask.TaskModel;
 import com.project.doer.allUser.AllUserDataList;
 import com.project.doer.group.GroupModel;
 import com.project.doer.login.LoginModel;
+import com.project.doer.login.LoginModelBody;
 import com.project.doer.signup.SignUpModel;
 import com.project.doer.userNotice.EventModel;
 import com.project.doer.userNotice.UserEventList;
@@ -13,6 +14,7 @@ import com.project.doer.userTask.UserDatalist;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.Field;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
@@ -35,7 +37,7 @@ public interface DoerApiInterface {
     Call<SignUpModel> actionUserSignUp(@Body SignUpModel signUpModel);
 
     @POST("user/login")
-    Call<LoginModel> actionLogin(@Body LoginModel loginModel);
+    Call<LoginModel> actionLogin( @Body LoginModel loginModel);
 
 
     //Admin
