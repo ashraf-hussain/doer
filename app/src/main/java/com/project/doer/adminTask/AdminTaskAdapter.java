@@ -12,7 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.project.doer.R;
-import com.project.doer.adminReview.AdminUserReviewActivity;
+import com.project.doer.allUser.AllUserActivity;
 import com.project.doer.data.AppConstants;
 
 import java.util.List;
@@ -49,12 +49,12 @@ public class AdminTaskAdapter extends RecyclerView.Adapter<AdminTaskAdapter.View
         final TaskModel taskModel = taskModelList.get(position);
         holder.tvTaskTitle.setText(taskModel.getTitle());
         holder.tvTaskDescription.setText(taskModel.getDescription());
-        holder.tvTaskDeadline.setText(taskModel.getDeadline());
+        holder.tvTaskDeadline.setText(taskModel.getDeadline()+", "+taskModel.getTime());
         holder.cvUserTaskAdapter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, AdminUserReviewActivity.class);
-                i.putExtra(AppConstants.REVIEW, taskModel);
+                Intent i = new Intent(context, AllUserActivity.class);
+                i.putExtra(AppConstants.TASK_DETAIL, taskModel);
                 context.startActivity(i);
             }
         });

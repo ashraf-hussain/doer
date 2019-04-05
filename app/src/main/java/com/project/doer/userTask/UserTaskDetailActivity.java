@@ -19,6 +19,7 @@ import com.project.doer.userReview.UserReviewView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class UserTaskDetailActivity extends BaseActivity implements UserReviewView {
     @BindView(R.id.tv_review_title)
@@ -41,6 +42,8 @@ public class UserTaskDetailActivity extends BaseActivity implements UserReviewVi
     @BindView(R.id.ll_user_review_adapter)
     LinearLayout llUserReviewAdapter;
     UserReviewPresenter userReviewPresenter;
+    @BindView(R.id.tb_title)
+    TextView tbTitle;
 
     @Override
     protected int getLayout() {
@@ -82,4 +85,9 @@ public class UserTaskDetailActivity extends BaseActivity implements UserReviewVi
 
     }
 
+
+    @OnClick(R.id.toolbar)
+    public void onViewClicked() {
+        onBackPressed();
+    }
 }

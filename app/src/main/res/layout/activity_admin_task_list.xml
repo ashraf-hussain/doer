@@ -4,16 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingTop="@dimen/medium_size"
-        android:paddingBottom="@dimen/margin_small"
-        android:text="@string/task_list"
-        android:textColor="@color/colorAccent"
-        android:textSize="18sp"
-        android:typeface="serif" />
+    <include layout="@layout/toolbar_with_back_btn" />
+
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -30,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            android:src="@drawable/ic_mode_edit_black_24dp" />
+            android:src="@drawable/ic_edit_black_24dp" />
     </FrameLayout>
 
 </LinearLayout>

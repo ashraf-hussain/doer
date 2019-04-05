@@ -2,17 +2,15 @@ package com.project.doer.group;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.project.doer.CreateGroupActivity;
 import com.project.doer.R;
-import com.project.doer.adminTask.AdminTaskListActivity;
 import com.project.doer.common.BaseActivity;
-import com.project.doer.data.AppConstants;
 
 import java.util.List;
 
@@ -24,6 +22,8 @@ public class GetAllGroupsActivity extends BaseActivity implements GetAllGroupsVi
     @BindView(R.id.rv_get_all_groups)
     RecyclerView rvGetAllGroups;
     GetAllGroupsPresenter getAllGroupsPresenter;
+    @BindView(R.id.tb_title)
+    TextView tbTitle;
 
 
     @Override
@@ -35,6 +35,7 @@ public class GetAllGroupsActivity extends BaseActivity implements GetAllGroupsVi
     protected void init() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+        tbTitle.setText(R.string.all_groups);
         rvGetAllGroups.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         rvGetAllGroups.setLayoutManager(layoutManager);
@@ -60,6 +61,12 @@ public class GetAllGroupsActivity extends BaseActivity implements GetAllGroupsVi
     public void onViewClicked() {
         Intent i = new Intent(this, CreateGroupActivity.class);
         startActivity(i);
+    }
+
+
+    @OnClick(R.id.toolbar)
+    public void onClicked() {
+        onBackPressed();
     }
 }
 

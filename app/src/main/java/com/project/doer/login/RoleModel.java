@@ -2,7 +2,9 @@ package com.project.doer.login;
 
 import com.google.gson.annotations.SerializedName;
 
-public class RoleModel {
+import java.io.Serializable;
+
+public class RoleModel implements Serializable {
 
     public String getRole() {
         return role;

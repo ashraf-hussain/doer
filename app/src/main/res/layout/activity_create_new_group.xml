@@ -7,10 +7,12 @@
 
 
     <TextView
+        android:id="@+id/back_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="32dp"
+        android:drawableStart="@drawable/ic_keyboard_backspace_black_24dp"
         android:text="Create Group "
         android:textColor="@color/colorAccent"
         android:textSize="24sp"

@@ -13,10 +13,12 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/back_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="@dimen/layout_padding"
+            android:drawableStart="@drawable/ic_keyboard_backspace_black_24dp"
             android:text="@string/assign_task"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"
@@ -66,28 +68,48 @@
                 android:textSize="16sp"
                 android:typeface="serif" />
         </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
 
             <EditText
                 android:id="@+id/et_assign_task_todo_deadline"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:drawableStart="@drawable/ic_brightness_1_black_24dp"
                 android:drawablePadding="8dp"
-                android:hint="@string/deadline"
+                android:hint="@string/date"
+                android:inputType="date"
                 android:maxLines="1"
-                android:inputType="textWebEmailAddress"
-                android:paddingTop="16dp"
-                android:paddingEnd="16dp"
                 android:paddingBottom="16dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp"
                 android:typeface="serif" />
-        </android.support.design.widget.TextInputLayout>
+
+
+            <EditText
+
+                android:id="@+id/et_assign_task_todo_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_brightness_1_black_24dp"
+                android:drawablePadding="8dp"
+                android:hint="@string/time"
+                android:inputType="date"
+                android:paddingBottom="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
 
 
         <Button

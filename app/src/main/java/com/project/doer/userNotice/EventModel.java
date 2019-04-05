@@ -32,12 +32,11 @@ public class EventModel implements Serializable {
     @SerializedName("notify")
     private Boolean notify;
 
-    public EventModel(String title, String description, String venue, String eventImg,
+    public EventModel(String title, String description, String venue,
                       String eventTime, String otherInfo, String deadline, Boolean notify) {
         this.title = title;
         this.description = description;
         this.venue = venue;
-        this.eventImg = eventImg;
         this.eventTime = eventTime;
         this.otherInfo = otherInfo;
         this.deadline = deadline;

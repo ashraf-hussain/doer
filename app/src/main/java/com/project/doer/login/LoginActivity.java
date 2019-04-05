@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
 import com.project.doer.R;
+import com.project.doer.admin.AdminLandingActivity;
 import com.project.doer.common.BaseActivity;
 import com.project.doer.data.AppConstants;
 import com.project.doer.data.AppUtils;
@@ -107,7 +108,7 @@ public class LoginActivity extends BaseActivity implements BaseView {
         AppUtils.showToast(this, role);
         save(AppConstants.TOKEN, token);
         userGroupId = groupId;
-       // idOfUser = userId;
+        // idOfUser = userId;
 
         if (role.equalsIgnoreCase("USER")) {
             Log.d(TAG, "onSuccess: " + role);
@@ -118,7 +119,7 @@ public class LoginActivity extends BaseActivity implements BaseView {
         } else if (role.equalsIgnoreCase("ADMIN")) {
             Log.d(TAG, "onSuccess: " + role);
 
-            Intent admin = new Intent(this, GetAllGroupsActivity.class);
+            Intent admin = new Intent(this, AdminLandingActivity.class);
             startActivity(admin);
             finish();
 

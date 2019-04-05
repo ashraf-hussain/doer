@@ -2,13 +2,14 @@ package com.project.doer.model;
 
 import com.project.doer.GroupList;
 import com.project.doer.adminTask.TaskModel;
+import com.project.doer.allUser.AllUserDataList;
 import com.project.doer.group.GroupModel;
 import com.project.doer.login.LoginModel;
 import com.project.doer.signup.SignUpModel;
 import com.project.doer.userNotice.EventModel;
 import com.project.doer.userNotice.UserEventList;
 import com.project.doer.userReview.ReviewModel;
-import com.project.doer.userTask.UserTasklist;
+import com.project.doer.userTask.UserDatalist;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -21,12 +22,11 @@ public interface DoerApiInterface {
     @GET("groups")
     Call<GroupList> getGroups();
 
-
     @GET("events")
     Call<UserEventList> getUserEvents();
 
     @GET("tasks")
-    Call<UserTasklist> getUserTask();
+    Call<UserDatalist> getUserTask();
 
     @GET("reviews/task/{taskId}/user/{userId}")
     Call<ReviewModel> getUsersReviews(@Path("taskId") int taskId, @Path("userId") int userId);
@@ -53,7 +53,11 @@ public interface DoerApiInterface {
     Call<TaskModel> postTask(@Body TaskModel taskModel);
 
     @GET("tasks/group/{groupId}")
-    Call<UserTasklist> getGroupTask(@Path("groupId") int groupId);
+    Call<UserDatalist> getGroupTask(@Path("groupId") int groupId);
+
+    //All Users
+    @GET("user/all")
+    Call<AllUserDataList> getAllUsers();
 
     //Notice
     @POST("events")

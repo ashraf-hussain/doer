@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_event_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/event"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:typeface="serif" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_brightness_1_black_24dp"
+                android:drawablePadding="8dp"
+                android:hint="@string/event_title"
+                android:inputType="textMultiLine"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/et_event_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_brightness_1_black_24dp"
+                android:drawablePadding="8dp"
+                android:hint="@string/venue"
+                android:inputType="text"
+                android:paddingBottom="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_event_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_brightness_1_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/date"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+
+                <EditText
+
+                    android:id="@+id/et_event_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_brightness_1_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/time"
+                    android:inputType="date"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/et_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_event_other_info"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:hint="@string/extra_info_opt"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_upload_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_background"
+            android:text="@string/upload_event"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
